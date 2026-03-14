@@ -1,0 +1,40 @@
+# 65. Valid Number
+
+## Metadata
+- Platform: LeetCode
+- Difficulty: Hard
+- Primary Topic: Strings
+- Folder Path: `leetcode/hard/strings/65_valid_number`
+- Folder Name: `65_valid_number`
+- Official Link: https://leetcode.com/problems/valid-number/
+
+## Problem Overview
+Determine whether the string represents a valid decimal or scientific-notation number.
+
+## Java Starter Signature
+```java
+public boolean isNumber(String s)
+```
+
+
+## Suggested Test Cases
+1. `s = "0" -> true`
+2. `s = "e" -> false`
+3. `s = ".1" -> true`
+
+## What To Watch For
+- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
+- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
+- When building a result string, think about whether repeated concatenation should be avoided.
+
+## Starter File Status
+This folder is prepared as a starter workspace for solving the problem yourself.
+
+- `ValidNumber.java` contains the correct class name and Java method signature.
+- `ValidNumberTest.java` contains scaffold test-case notes that you can convert into real assertions after implementing the solution.
+- `README.md` gives you a quick revision-friendly summary before you start coding.
+
+## Folder Contents
+- `ValidNumber.java` - blank Java starter solution
+- `ValidNumberTest.java` - starter test scaffold
+- `README.md` - detailed problem notes and folder guide
