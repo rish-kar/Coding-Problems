@@ -1,6 +1,6 @@
 public class LengthOfLastWord {
     public int lengthOfLastWord(String s) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

@@ -9,24 +9,23 @@
 - Official Link: https://leetcode.com/problems/swap-nodes-in-pairs/
 
 ## Problem Overview
-Swap every two adjacent nodes in the linked list and return the new head.
+You are given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public ListNode swapPairs(ListNode head)
 ```
 
-The starter Java file also includes a lightweight `ListNode` definition so the folder compiles cleanly in isolation.
-
 ## Suggested Test Cases
-1. `head = [1,2,3,4] -> [2,1,4,3]`
-2. `head = [] -> []`
-3. `head = [1] -> [1]`
+1. `head = [1,2,3,4]` -> `[2,1,4,3]`
+2. `head = []` -> `[]`
+3. `head = [1]` -> `[1]`
 
 ## What To Watch For
-- Handle an empty list and a single-node list before pointer rewiring gets complicated.
-- Dummy nodes often simplify edge cases that affect the head of the list.
-- Reconnect the remaining tail carefully so nodes are not lost or cycled by mistake.
+- Handle `null` and single-node lists before pointer rewiring.
+- Store next-node references before changing links to avoid losing the list.
+- Return the updated head node required by the method signature.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

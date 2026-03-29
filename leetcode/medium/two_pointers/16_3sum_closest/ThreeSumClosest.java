@@ -1,6 +1,6 @@
 public class ThreeSumClosest {
     public int threeSumClosest(int[] nums, int target) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

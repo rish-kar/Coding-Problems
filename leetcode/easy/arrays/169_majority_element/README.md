@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/majority-element/
 
 ## Problem Overview
-Return the value that appears more than half the time in the array.
+You are given an array nums of size n , return the majority element .
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 
 ## Java Starter Signature
 ```java
 public int majorityElement(int[] nums)
 ```
 
-
 ## Suggested Test Cases
-1. `nums = [3,2,3] -> 3`
-2. `nums = [2,2,1,1,1,2,2] -> 2`
-3. `nums = [1] -> 1`
+1. `nums = [3,2,3]` -> `3`
+2. `nums = [2,2,1,1,1,2,2]` -> `2`
+3. `nums = [0]` -> `0`
 
 ## What To Watch For
-- Check small lengths like 0, 1, and 2 before assuming a longer scan is possible.
-- Be careful with in-place updates so you do not overwrite values you still need to read.
-- Watch for off-by-one errors when returning a new length or slicing a kept prefix.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -1,6 +1,6 @@
 public class MinimumPathSum {
     public int minPathSum(int[][] grid) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

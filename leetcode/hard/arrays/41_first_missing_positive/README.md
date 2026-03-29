@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/first-missing-positive/
 
 ## Problem Overview
-Return the smallest positive integer that does not appear in the array.
+You are given an unsorted integer array nums . Then return the smallest positive integer that is not present in nums .
+You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
 
 ## Java Starter Signature
 ```java
 public int firstMissingPositive(int[] nums)
 ```
 
-
 ## Suggested Test Cases
-1. `nums = [1,2,0] -> 3`
-2. `nums = [3,4,-1,1] -> 2`
-3. `nums = [7,8,9,11,12] -> 1`
+1. `nums = [1,2,0]` -> `3`
+2. `nums = [3,4,-1,1]` -> `2`
+3. `nums = [7,8,9,11,12]` -> `1`
 
 ## What To Watch For
-- Check small lengths like 0, 1, and 2 before assuming a longer scan is possible.
-- Be careful with in-place updates so you do not overwrite values you still need to read.
-- Watch for off-by-one errors when returning a new length or slicing a kept prefix.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

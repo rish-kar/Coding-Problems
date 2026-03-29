@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/text-justification/
 
 ## Problem Overview
-Pack the words into fully justified lines of exactly maxWidth characters.
+You are given an array of strings words and a width maxWidth , format the text such that each line has exactly maxWidth characters and is fully (left and right) justified.
+You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ' ' when necessary so that each line has exactly maxWidth characters.
 
 ## Java Starter Signature
 ```java
 public List<String> fullJustify(String[] words, int maxWidth)
 ```
 
-
 ## Suggested Test Cases
-1. `words = ["This","is","an","example","of","text","justification."], maxWidth = 16 -> justified lines`
-2. `the last line should be left-justified`
-3. `lines with one word must pad spaces on the right`
+1. `words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16` -> `[ "This is an", "example of text", "justification. " ]`
+2. `words = ["What","must","be","acknowledgment","shall","be"], maxWidth = 16` -> `[ "What must be", "acknowledgment ", "shall be " ]`
+3. `words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"], maxWidth = 20` -> `[ "Science is what we", "understand well", "enough to explain to", "a computer. Art is", "everything else we", "do " ]`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

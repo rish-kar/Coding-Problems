@@ -1,6 +1,6 @@
 public class UniqueBinarySearchTrees {
     public int numTrees(int n) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

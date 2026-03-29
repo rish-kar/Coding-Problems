@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/contains-duplicate/
 
 ## Problem Overview
-Return whether any value appears at least twice in the array.
+You are given an integer array nums , return true if any value appears at least twice in the array, and return false if every element is distinct.
+The element 1 occurs at the indices 0 and 3.
 
 ## Java Starter Signature
 ```java
 public boolean containsDuplicate(int[] nums)
 ```
 
-
 ## Suggested Test Cases
-1. `nums = [1,2,3,1] -> true`
-2. `nums = [1,2,3,4] -> false`
-3. `nums = [1,1,1,3,3,4,3,2,4,2] -> true`
+1. `nums = [1,2,3,1]` -> `true`
+2. `nums = [1,2,3,4]` -> `false`
+3. `nums = [1,1,1,3,3,4,3,2,4,2]` -> `true`
 
 ## What To Watch For
-- Check small lengths like 0, 1, and 2 before assuming a longer scan is possible.
-- Be careful with in-place updates so you do not overwrite values you still need to read.
-- Watch for off-by-one errors when returning a new length or slicing a kept prefix.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

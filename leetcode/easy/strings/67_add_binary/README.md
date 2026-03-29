@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/add-binary/
 
 ## Problem Overview
-Add two binary strings and return their sum as a binary string.
+You are given two binary strings a and b , return their sum as a binary string .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public String addBinary(String a, String b)
 ```
 
-
 ## Suggested Test Cases
-1. `a = "11", b = "1" -> "100"`
-2. `a = "1010", b = "1011" -> "10101"`
-3. `a = "0", b = "0" -> "0"`
+1. `a = "11", b = "1"` -> `"100"`
+2. `a = "1010", b = "1011"` -> `"10101"`
+3. `s = ""` -> `returns the correct empty-input result`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -9,24 +9,23 @@
 - Official Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 
 ## Problem Overview
-Delete every value that appears more than once so only distinct values remain in the sorted list.
+You are given the head of a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list . Then return the linked list sorted as well .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public ListNode deleteDuplicates(ListNode head)
 ```
 
-The starter Java file also includes a lightweight `ListNode` definition so the folder compiles cleanly in isolation.
-
 ## Suggested Test Cases
-1. `head = [1,2,3,3,4,4,5] -> [1,2,5]`
-2. `head = [1,1,1,2,3] -> [2,3]`
-3. `head = [1,1] -> []`
+1. `head = [1,2,3,3,4,4,5]` -> `[1,2,5]`
+2. `head = [1,1,1,2,3]` -> `[2,3]`
+3. `second official example` -> `same expected output as the example`
 
 ## What To Watch For
-- Handle an empty list and a single-node list before pointer rewiring gets complicated.
-- Dummy nodes often simplify edge cases that affect the head of the list.
-- Reconnect the remaining tail carefully so nodes are not lost or cycled by mistake.
+- Handle `null` and single-node lists before pointer rewiring.
+- Store next-node references before changing links to avoid losing the list.
+- Return the updated head node required by the method signature.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

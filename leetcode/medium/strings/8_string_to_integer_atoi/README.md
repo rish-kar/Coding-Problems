@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/string-to-integer-atoi/
 
 ## Problem Overview
-Parse the string like the classic atoi function while handling whitespace, sign characters, invalid trailing content, and overflow.
+Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.
+The algorithm for myAtoi(string s) is as follows
 
 ## Java Starter Signature
 ```java
 public int myAtoi(String s)
 ```
 
-
 ## Suggested Test Cases
-1. `s = "42" -> 42`
-2. `s = "   -42" -> -42`
-3. `s = "4193 with words" -> 4193`
+1. `s = "42"` -> `42`
+2. `s = " -042"` -> `-42`
+3. `s = "1337c0d3"` -> `1337`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

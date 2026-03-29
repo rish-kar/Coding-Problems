@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Bit Manipulation
+- Primary Topic: Backtracking
 - Folder Path: `leetcode/medium/bit_manipulation/89_gray_code`
 - Folder Name: `89_gray_code`
 - Official Link: https://leetcode.com/problems/gray-code/
 
 ## Problem Overview
-Generate a Gray code sequence of length 2^n where adjacent values differ by one bit.
+An n-bit gray code sequence is a sequence of 2 n integers where
+You are given an integer n , return any valid n-bit gray code sequence .
 
 ## Java Starter Signature
 ```java
 public List<Integer> grayCode(int n)
 ```
 
-
 ## Suggested Test Cases
-1. `n = 2 -> [0,1,3,2] or another valid Gray order`
-2. `n = 1 -> [0,1]`
-3. `n = 0 -> [0]`
+1. `n = 2` -> `[0,1,3,2]`
+2. `n = 1` -> `[0,1]`
+3. `input from Example 1` -> `output from Example 1`
 
 ## What To Watch For
-- Watch for sign handling and overflow near the 32-bit integer limits.
-- Left shifts and subtraction loops are common tools when division is restricted.
-- Bit-based constructions usually benefit from checking the highest positions first.
+- Cover edge inputs explicitly so `grayCode` behaves correctly on boundary cases.
+- Maintain the core invariant of your chosen approach at every update step.
+- Return the result in the exact format expected by the LeetCode judge.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

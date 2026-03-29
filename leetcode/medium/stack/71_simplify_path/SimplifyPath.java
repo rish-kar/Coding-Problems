@@ -1,6 +1,6 @@
 public class SimplifyPath {
     public String simplifyPath(String path) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return "";
     }
 }

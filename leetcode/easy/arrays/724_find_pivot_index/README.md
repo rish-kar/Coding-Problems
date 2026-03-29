@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/find-pivot-index/
 
 ## Problem Overview
-Return the index where the sum on the left equals the sum on the right, or -1 if none exists.
+You are given an array of integers nums , calculate the pivot index of this array.
+The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
 
 ## Java Starter Signature
 ```java
 public int pivotIndex(int[] nums)
 ```
 
-
 ## Suggested Test Cases
-1. `nums = [1,7,3,6,5,6] -> 3`
-2. `nums = [1,2,3] -> -1`
-3. `nums = [2,1,-1] -> 0`
+1. `nums = [1,7,3,6,5,6]` -> `3`
+2. `nums = [1,2,3]` -> `-1`
+3. `nums = [2,1,-1]` -> `0`
 
 ## What To Watch For
-- Check small lengths like 0, 1, and 2 before assuming a longer scan is possible.
-- Be careful with in-place updates so you do not overwrite values you still need to read.
-- Watch for off-by-one errors when returning a new length or slicing a kept prefix.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

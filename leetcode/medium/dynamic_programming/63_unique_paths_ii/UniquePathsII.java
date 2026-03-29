@@ -1,6 +1,6 @@
 public class UniquePathsII {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

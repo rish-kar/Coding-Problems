@@ -1,6 +1,6 @@
 public class JumpGameII {
     public int jump(int[] nums) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

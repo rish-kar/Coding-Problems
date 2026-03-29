@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Intervals
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/intervals/56_merge_intervals`
 - Folder Name: `56_merge_intervals`
 - Official Link: https://leetcode.com/problems/merge-intervals/
 
 ## Problem Overview
-Merge all overlapping intervals and return the condensed list.
+You are given an array of intervals where intervals[i] = [start i , end i ] , merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public int[][] merge(int[][] intervals)
 ```
 
-
 ## Suggested Test Cases
-1. `intervals = [[1,3],[2,6],[8,10],[15,18]] -> [[1,6],[8,10],[15,18]]`
-2. `intervals = [[1,4],[4,5]] -> [[1,5]]`
-3. `intervals = [[1,4],[0,4]] -> [[0,4]]`
+1. `intervals = [[1,3],[2,6],[8,10],[15,18]]` -> `[[1,6],[8,10],[15,18]]`
+2. `intervals = [[1,4],[4,5]]` -> `[[1,5]]`
+3. `intervals = [[4,7],[1,4]]` -> `[[1,7]]`
 
 ## What To Watch For
-- Confirm whether intervals are already sorted or need sorting first.
-- Overlaps at shared endpoints should be handled consistently.
-- Build the answer incrementally so merged ranges are emitted only when finished.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

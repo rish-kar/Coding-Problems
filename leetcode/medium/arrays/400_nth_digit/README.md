@@ -1,0 +1,40 @@
+# 400. Nth Digit
+
+## Metadata
+- Platform: LeetCode
+- Difficulty: Medium
+- Primary Topic: Binary Search
+- Folder Path: `leetcode/medium/arrays/400_nth_digit`
+- Folder Name: `400_nth_digit`
+- Official Link: https://leetcode.com/problems/nth-digit/
+
+## Problem Overview
+You are given an integer n , return the n th digit of the infinite integer sequence [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...] .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
+
+## Java Starter Signature
+```java
+public int findNthDigit(int n)
+```
+
+## Suggested Test Cases
+1. `n = 3` -> `3`
+2. `n = 11` -> `0`
+3. `input from Example 1` -> `output from Example 1`
+
+## What To Watch For
+- Keep interval boundaries consistent (`[low, high]` or `[low, high)`) through the whole loop.
+- Recompute the midpoint safely and update the correct boundary each step.
+- Return the exact index/boundary requested, not just any matching position.
+
+## Starter File Status
+This folder is prepared as a starter workspace for solving the problem yourself.
+
+- `NthDigit.java` contains the correct class name and Java method signature.
+- `NthDigitTest.java` contains scaffold test-case notes that you can convert into real assertions after implementing the solution.
+- `README.md` gives you a quick revision-friendly summary before you start coding.
+
+## Folder Contents
+- `NthDigit.java` - blank Java starter solution
+- `NthDigitTest.java` - starter test scaffold
+- `README.md` - detailed problem notes and folder guide

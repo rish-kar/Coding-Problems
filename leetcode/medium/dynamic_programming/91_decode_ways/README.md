@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Dynamic Programming
+- Primary Topic: Strings
 - Folder Path: `leetcode/medium/dynamic_programming/91_decode_ways`
 - Folder Name: `91_decode_ways`
 - Official Link: https://leetcode.com/problems/decode-ways/
 
 ## Problem Overview
-Count how many valid letter decodings the digit string has using 1 -> A through 26 -> Z.
+You have intercepted a secret message encoded as a string of numbers. The message is decoded via the following mapping
+"1" -> 'A' "2" -> 'B' ... "25" -> 'Y' "26" -> 'Z'
 
 ## Java Starter Signature
 ```java
 public int numDecodings(String s)
 ```
 
-
 ## Suggested Test Cases
-1. `s = "12" -> 2`
-2. `s = "226" -> 3`
-3. `s = "06" -> 0`
+1. `s = "12"` -> `2`
+2. `s = "226"` -> `3`
+3. `s = "06"` -> `0`
 
 ## What To Watch For
-- Base cases matter because every later state depends on them.
-- Write down the transition clearly before coding so each state means exactly one thing.
-- Check whether the answer belongs at the final cell, the final index, or the best value seen anywhere.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

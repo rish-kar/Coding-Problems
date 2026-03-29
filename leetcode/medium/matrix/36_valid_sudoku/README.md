@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Matrix
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/matrix/36_valid_sudoku`
 - Folder Name: `36_valid_sudoku`
 - Official Link: https://leetcode.com/problems/valid-sudoku/
 
 ## Problem Overview
-Check whether the partially filled Sudoku board follows row, column, and box rules.
+Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public boolean isValidSudoku(char[][] board)
 ```
 
-
 ## Suggested Test Cases
-1. `board = sample valid grid -> true`
-2. `board = sample invalid row or box -> false`
-3. `board with repeated digit in a column -> false`
+1. `board = [["5","3",".",".","7",".",".",".","."] ,["6",".",".","1","9","5",".",".","."] ,[".","9","8",".",".",".",".","6","."] ,["8",".",".",".","6",".",".",".","3"] ,["4",".",".","8",".","3",".",".","1"] ,["7",".",".",".","2",".",".",".","6"] ,[".","6",".",".",".",".","2","8","."] ,[".",".",".","4","1","9",".",".","5"] ,[".",".",".",".","8",".",".","7","9"]]` -> `true`
+2. `board = [["8","3",".",".","7",".",".",".","."] ,["6",".",".","1","9","5",".",".","."] ,[".","9","8",".",".",".",".","6","."] ,["8",".",".",".","6",".",".",".","3"] ,["4",".",".","8",".","3",".",".","1"] ,["7",".",".",".","2",".",".",".","6"] ,[".","6",".",".",".",".","2","8","."] ,[".",".",".","4","1","9",".",".","5"] ,[".",".",".",".","8",".",".","7","9"]]` -> `false`
+3. `input = []` -> `true`
 
 ## What To Watch For
-- Always keep row and column bounds separate so rectangular inputs still work.
-- If you mutate the matrix in place, decide which cells can safely act as markers.
-- Traversal problems usually need a clear visited rule or shrinking boundary rule.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

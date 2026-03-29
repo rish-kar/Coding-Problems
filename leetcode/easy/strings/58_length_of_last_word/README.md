@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/length-of-last-word/
 
 ## Problem Overview
-Return the length of the last word in the string, ignoring trailing spaces.
+You are given a string s consisting of words and spaces, return the length of the last word in the string.
+A word is a maximal substring consisting of non-space characters only.
 
 ## Java Starter Signature
 ```java
 public int lengthOfLastWord(String s)
 ```
 
-
 ## Suggested Test Cases
-1. `s = "Hello World" -> 5`
-2. `s = "   fly me   to   the moon  " -> 4`
-3. `s = "luffy is still joyboy" -> 6`
+1. `s = "Hello World"` -> `5`
+2. `s = " fly me to the moon "` -> `4`
+3. `s = "luffy is still joyboy"` -> `6`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

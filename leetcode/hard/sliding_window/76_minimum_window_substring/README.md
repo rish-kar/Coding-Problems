@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Hard
-- Primary Topic: Sliding Window
+- Primary Topic: Strings
 - Folder Path: `leetcode/hard/sliding_window/76_minimum_window_substring`
 - Folder Name: `76_minimum_window_substring`
 - Official Link: https://leetcode.com/problems/minimum-window-substring/
 
 ## Problem Overview
-Return the smallest substring of s that contains every character from t with the needed counts.
+You are given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t ( including duplicates ) is included in the window . If there is no such substring, return the empty string "" .
+The testcases will be generated such that the answer is unique .
 
 ## Java Starter Signature
 ```java
 public String minWindow(String s, String t)
 ```
 
-
 ## Suggested Test Cases
-1. `s = "ADOBECODEBANC", t = "ABC" -> "BANC"`
-2. `s = "a", t = "a" -> "a"`
-3. `s = "a", t = "aa" -> ""`
+1. `s = "ADOBECODEBANC", t = "ABC"` -> `"BANC"`
+2. `s = "a", t = "a"` -> `"a"`
+3. `s = "a", t = "aa"` -> `""`
 
 ## What To Watch For
-- Update the window state in the same order every time you expand or shrink.
-- Character counts or last-seen positions usually matter more than the raw substring itself.
-- Remember to compare answers after the final shrink or expansion step too.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

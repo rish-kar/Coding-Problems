@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/longest-palindromic-substring/
 
 ## Problem Overview
-Return the longest contiguous substring that reads the same forward and backward.
+You are given a string s , return the longest palindromic substring in s .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public String longestPalindrome(String s)
 ```
 
-
 ## Suggested Test Cases
-1. `s = "babad" -> "bab" or "aba"`
-2. `s = "cbbd" -> "bb"`
-3. `s = "a" -> "a"`
+1. `s = "babad"` -> `"bab"`
+2. `s = "cbbd"` -> `"bb"`
+3. `s = ""` -> `returns the correct empty-input result`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

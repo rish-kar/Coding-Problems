@@ -9,24 +9,23 @@
 - Official Link: https://leetcode.com/problems/validate-binary-search-tree/
 
 ## Problem Overview
-Check whether the binary tree satisfies the BST ordering rules everywhere.
+You are given the root of a binary tree, determine if it is a valid binary search tree (BST) .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public boolean isValidBST(TreeNode root)
 ```
 
-The starter Java file also includes a lightweight `TreeNode` definition so the folder compiles cleanly in isolation.
-
 ## Suggested Test Cases
-1. `root = [2,1,3] -> true`
-2. `root = [5,1,4,null,null,3,6] -> false`
-3. `a tree with duplicate values in BST positions should be false`
+1. `root = [2,1,3]` -> `true`
+2. `root = [5,1,4,null,null,3,6]` -> `false`
+3. `input = []` -> `true`
 
 ## What To Watch For
-- Use the BST ordering rule globally, not just between a node and its direct children.
-- Inorder traversal is often the easiest way to expose the sorted-value property.
-- Be careful with duplicate values because many BST problems require strict inequality.
+- Cover edge inputs explicitly so `isValidBST` behaves correctly on boundary cases.
+- Maintain the core invariant of your chosen approach at every update step.
+- Return the result in the exact format expected by the LeetCode judge.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

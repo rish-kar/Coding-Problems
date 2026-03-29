@@ -1,0 +1,40 @@
+# 205. Isomorphic Strings
+
+## Metadata
+- Platform: LeetCode
+- Difficulty: Easy
+- Primary Topic: Strings
+- Folder Path: `leetcode/easy/strings/205_isomorphic_strings`
+- Folder Name: `205_isomorphic_strings`
+- Official Link: https://leetcode.com/problems/isomorphic-strings/
+
+## Problem Overview
+You are given two strings s and t , determine if they are isomorphic .
+Two strings s and t are isomorphic if the characters in s can be replaced to get t .
+
+## Java Starter Signature
+```java
+public boolean isIsomorphic(String s, String t)
+```
+
+## Suggested Test Cases
+1. `s = "egg", t = "add"` -> `true`
+2. `s = "f11", t = "b23"` -> `false`
+3. `s = "paper", t = "title"` -> `true`
+
+## What To Watch For
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
+
+## Starter File Status
+This folder is prepared as a starter workspace for solving the problem yourself.
+
+- `IsomorphicStrings.java` contains the correct class name and Java method signature.
+- `IsomorphicStringsTest.java` contains scaffold test-case notes that you can convert into real assertions after implementing the solution.
+- `README.md` gives you a quick revision-friendly summary before you start coding.
+
+## Folder Contents
+- `IsomorphicStrings.java` - blank Java starter solution
+- `IsomorphicStringsTest.java` - starter test scaffold
+- `README.md` - detailed problem notes and folder guide

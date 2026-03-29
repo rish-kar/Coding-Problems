@@ -9,24 +9,23 @@
 - Official Link: https://leetcode.com/problems/add-two-numbers/
 
 ## Problem Overview
-Add two numbers stored in reverse-order linked lists and return the sum as a linked list in the same format.
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order , and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
 ## Java Starter Signature
 ```java
 public ListNode addTwoNumbers(ListNode l1, ListNode l2)
 ```
 
-The starter Java file also includes a lightweight `ListNode` definition so the folder compiles cleanly in isolation.
-
 ## Suggested Test Cases
-1. `l1 = [2,4,3], l2 = [5,6,4] -> [7,0,8]`
-2. `l1 = [0], l2 = [0] -> [0]`
-3. `l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9] -> [8,9,9,9,0,0,0,1]`
+1. `l1 = [2,4,3], l2 = [5,6,4]` -> `[7,0,8]`
+2. `l1 = [0], l2 = [0]` -> `[0]`
+3. `l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]` -> `[8,9,9,9,0,0,0,1]`
 
 ## What To Watch For
-- Handle an empty list and a single-node list before pointer rewiring gets complicated.
-- Dummy nodes often simplify edge cases that affect the head of the list.
-- Reconnect the remaining tail carefully so nodes are not lost or cycled by mistake.
+- Handle `null` and single-node lists before pointer rewiring.
+- Store next-node references before changing links to avoid losing the list.
+- Return the updated head node required by the method signature.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

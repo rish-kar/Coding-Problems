@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/next-permutation/
 
 ## Problem Overview
-Rearrange the array into the next lexicographically greater permutation, or the smallest order if none exists.
+A permutation of an array of integers is an arrangement of its members into a sequence or linear order.
+The next permutation of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the next permutation of that array is the permutation that follows it in the sorted container. If such arrangement is not possible, the array must be rearranged as the lowest possible order (i.e., sorted in ascending order).
 
 ## Java Starter Signature
 ```java
 public void nextPermutation(int[] nums)
 ```
 
-
 ## Suggested Test Cases
-1. `nums = [1,2,3] -> [1,3,2]`
-2. `nums = [3,2,1] -> [1,2,3]`
-3. `nums = [1,1,5] -> [1,5,1]`
+1. `nums = [1,2,3]` -> `[1,3,2]`
+2. `nums = [3,2,1]` -> `[1,2,3]`
+3. `nums = [1,1,5]` -> `[1,5,1]`
 
 ## What To Watch For
-- Check small lengths like 0, 1, and 2 before assuming a longer scan is possible.
-- Be careful with in-place updates so you do not overwrite values you still need to read.
-- Watch for off-by-one errors when returning a new length or slicing a kept prefix.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

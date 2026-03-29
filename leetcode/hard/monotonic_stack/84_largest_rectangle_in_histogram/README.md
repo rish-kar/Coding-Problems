@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Hard
-- Primary Topic: Monotonic Stack
+- Primary Topic: Arrays
 - Folder Path: `leetcode/hard/monotonic_stack/84_largest_rectangle_in_histogram`
 - Folder Name: `84_largest_rectangle_in_histogram`
 - Official Link: https://leetcode.com/problems/largest-rectangle-in-histogram/
 
 ## Problem Overview
-Return the largest rectangle area that can be formed within the histogram.
+You are given an array of integers heights representing the histogram's bar height where the width of each bar is 1 , return the area of the largest rectangle in the histogram .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public int largestRectangleArea(int[] heights)
 ```
 
-
 ## Suggested Test Cases
-1. `heights = [2,1,5,6,2,3] -> 10`
-2. `heights = [2,4] -> 4`
-3. `heights = [1,1] -> 2`
+1. `heights = [2,1,5,6,2,3]` -> `10`
+2. `heights = [2,4]` -> `4`
+3. `nums = [single element]` -> `returns the correct base-case value`
 
 ## What To Watch For
-- Be explicit about whether the stack stays increasing or decreasing.
-- Equal values can change whether you pop now or later, so choose one rule and keep it consistent.
-- Many stack area problems require a final cleanup pass after the main scan.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

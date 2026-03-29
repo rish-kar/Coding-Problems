@@ -1,0 +1,40 @@
+# 296. Best Meeting Point
+
+## Metadata
+- Platform: LeetCode
+- Difficulty: Hard
+- Primary Topic: Arrays
+- Folder Path: `leetcode/hard/arrays/296_best_meeting_point`
+- Folder Name: `296_best_meeting_point`
+- Official Link: https://leetcode.com/problems/best-meeting-point/
+
+## Problem Overview
+Implement the core logic for Best Meeting Point exactly as the prompt defines.
+Work through the array based on the problem rule and compute the requested value.
+
+## Java Starter Signature
+```java
+public int minTotalDistance(Object grid)
+```
+
+## Suggested Test Cases
+1. `input from Example 1` -> `output from Example 1`
+2. `input from Example 2` -> `output from Example 2`
+3. `input from Example 3` -> `output from Example 3`
+
+## What To Watch For
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
+
+## Starter File Status
+This folder is prepared as a starter workspace for solving the problem yourself.
+
+- `BestMeetingPoint.java` contains the correct class name and Java method signature.
+- `BestMeetingPointTest.java` contains scaffold test-case notes that you can convert into real assertions after implementing the solution.
+- `README.md` gives you a quick revision-friendly summary before you start coding.
+
+## Folder Contents
+- `BestMeetingPoint.java` - blank Java starter solution
+- `BestMeetingPointTest.java` - starter test scaffold
+- `README.md` - detailed problem notes and folder guide

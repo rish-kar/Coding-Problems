@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Binary Search
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/binary_search/81_search_in_rotated_sorted_array_ii`
 - Folder Name: `81_search_in_rotated_sorted_array_ii`
 - Official Link: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
 
 ## Problem Overview
-Return whether the target exists in the rotated sorted array that may contain duplicates.
+There is an integer array nums sorted in non-decreasing order (not necessarily with distinct values).
+Before being passed to your function, nums is rotated at an unknown pivot index k ( 0 ) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] ( 0-indexed ). For example, [0,1,2,4,4,4,5,6,6,7] might be rotated at pivot index 5 and become [4,5,6,6,7,0,1,2,4,4] .
 
 ## Java Starter Signature
 ```java
 public boolean search(int[] nums, int target)
 ```
 
-
 ## Suggested Test Cases
-1. `nums = [2,5,6,0,0,1,2], target = 0 -> true`
-2. `nums = [2,5,6,0,0,1,2], target = 3 -> false`
-3. `nums = [1,0,1,1,1], target = 0 -> true`
+1. `nums = [2,5,6,0,0,1,2], target = 0` -> `true`
+2. `nums = [2,5,6,0,0,1,2], target = 3` -> `false`
+3. `nums = []` -> `false`
 
 ## What To Watch For
-- Decide whether the interval is closed or half-open and keep that rule consistent.
-- Midpoint and boundary updates should always shrink the search space.
-- When the loop ends, confirm whether the answer is a found index or an insertion boundary.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

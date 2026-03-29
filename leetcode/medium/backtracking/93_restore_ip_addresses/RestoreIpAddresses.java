@@ -1,9 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
-
-public class RestoreIpAddresses {
+public class RestoreIPAddresses {
     public List<String> restoreIpAddresses(String s) {
-        // TODO: Implement this method.
-        return new ArrayList<>();
+        // TODO: Implement solution.
+        return null;
     }
 }

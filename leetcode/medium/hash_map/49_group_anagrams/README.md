@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Hash Map
+- Primary Topic: Strings
 - Folder Path: `leetcode/medium/hash_map/49_group_anagrams`
 - Folder Name: `49_group_anagrams`
 - Official Link: https://leetcode.com/problems/group-anagrams/
 
 ## Problem Overview
-Group together the strings that are anagrams of one another.
+You are given an array of strings strs , group the anagrams together. You can return the answer in any order .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public List<List<String>> groupAnagrams(String[] strs)
 ```
 
-
 ## Suggested Test Cases
-1. `strs = ["eat","tea","tan","ate","nat","bat"] -> grouped anagrams`
-2. `strs = [""] -> [[""]]`
-3. `strs = ["a"] -> [["a"]]`
+1. `strs = ["eat","tea","tan","ate","nat","bat"]` -> `[["bat"],["nat","tan"],["ate","eat","tea"]]`
+2. `strs = [""]` -> `[[""]]`
+3. `strs = ["a"]` -> `[["a"]]`
 
 ## What To Watch For
-- Make sure repeated values are handled correctly rather than reusing the same index twice.
-- Think about whether order matters for the result or only membership/counting does.
-- Use a stable key representation when grouping or comparing values.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

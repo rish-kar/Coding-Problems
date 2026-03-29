@@ -1,0 +1,40 @@
+# 268. Missing Number
+
+## Metadata
+- Platform: LeetCode
+- Difficulty: Easy
+- Primary Topic: Arrays
+- Folder Path: `leetcode/easy/arrays/268_missing_number`
+- Folder Name: `268_missing_number`
+- Official Link: https://leetcode.com/problems/missing-number/
+
+## Problem Overview
+You are given an array nums containing n distinct numbers in the range [0, n] , return the only number in the range that is missing from the array.
+n = 3 since there are 3 numbers, so all numbers are in the range [0,3] . 2 is the missing number in the range since it does not appear in nums .
+
+## Java Starter Signature
+```java
+public int missingNumber(int[] nums)
+```
+
+## Suggested Test Cases
+1. `nums = [3,0,1]` -> `2`
+2. `nums = [0,1]` -> `2`
+3. `nums = [9,6,4,2,3,5,7,0,1]` -> `8`
+
+## What To Watch For
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
+
+## Starter File Status
+This folder is prepared as a starter workspace for solving the problem yourself.
+
+- `MissingNumber.java` contains the correct class name and Java method signature.
+- `MissingNumberTest.java` contains scaffold test-case notes that you can convert into real assertions after implementing the solution.
+- `README.md` gives you a quick revision-friendly summary before you start coding.
+
+## Folder Contents
+- `MissingNumber.java` - blank Java starter solution
+- `MissingNumberTest.java` - starter test scaffold
+- `README.md` - detailed problem notes and folder guide

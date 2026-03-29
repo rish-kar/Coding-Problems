@@ -1,6 +1,6 @@
 public class RemoveDuplicatesFromSortedArrayII {
     public int removeDuplicates(int[] nums) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

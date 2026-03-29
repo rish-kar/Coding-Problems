@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Backtracking
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/backtracking/47_permutations_ii`
 - Folder Name: `47_permutations_ii`
 - Official Link: https://leetcode.com/problems/permutations-ii/
 
 ## Problem Overview
-Return all unique permutations when the input may contain duplicates.
+You are given a collection of numbers, nums , that might contain duplicates, return all possible unique permutations in any order .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public List<List<Integer>> permuteUnique(int[] nums)
 ```
 
-
 ## Suggested Test Cases
-1. `nums = [1,1,2] -> unique permutations`
-2. `nums = [1,2,3] -> 6 permutations`
-3. `nums = [2,2,1,1] -> unique permutations without repeats`
+1. `nums = [1,1,2]` -> `[[1,1,2], [1,2,1], [2,1,1]]`
+2. `nums = [1,2,3]` -> `[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]`
+3. `nums = [single element]` -> `returns the correct base-case value`
 
 ## What To Watch For
-- Define the stopping condition first so you know exactly when to record an answer.
-- Undo each choice after the recursive call so the next branch starts cleanly.
-- If duplicates are possible, decide where to prune them before recursion explodes.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

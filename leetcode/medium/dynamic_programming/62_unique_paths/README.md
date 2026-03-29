@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/unique-paths/
 
 ## Problem Overview
-Count how many ways there are to move from the top-left corner to the bottom-right corner of the grid using only right and down moves.
+There is a robot on an m x n grid. The robot is initially located at the top-left corner (i.e., grid[0][0] ). The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1] ). The robot can only move either down or right at any point in time.
+You are given the two integers m and n , return the number of possible unique paths that the robot can take to reach the bottom-right corner .
 
 ## Java Starter Signature
 ```java
 public int uniquePaths(int m, int n)
 ```
 
-
 ## Suggested Test Cases
-1. `m = 3, n = 7 -> 28`
-2. `m = 3, n = 2 -> 3`
-3. `m = 7, n = 3 -> 28`
+1. `m = 3, n = 7` -> `28`
+2. `m = 3, n = 2` -> `3`
+3. `input from Example 1` -> `output from Example 1`
 
 ## What To Watch For
-- Base cases matter because every later state depends on them.
-- Write down the transition clearly before coding so each state means exactly one thing.
-- Check whether the answer belongs at the final cell, the final index, or the best value seen anywhere.
+- Define state meaning before coding transitions.
+- Initialize base states explicitly to avoid propagation errors.
+- Verify transition bounds so index access never goes out of range.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

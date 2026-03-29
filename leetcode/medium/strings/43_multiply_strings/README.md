@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/multiply-strings/
 
 ## Problem Overview
-Multiply two non-negative integers given as strings and return the product as a string.
+You are given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2 , also represented as a string.
+Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.
 
 ## Java Starter Signature
 ```java
 public String multiply(String num1, String num2)
 ```
 
-
 ## Suggested Test Cases
-1. `num1 = "2", num2 = "3" -> "6"`
-2. `num1 = "123", num2 = "456" -> "56088"`
-3. `num1 = "0", num2 = "999" -> "0"`
+1. `num1 = "2", num2 = "3"` -> `"6"`
+2. `num1 = "123", num2 = "456"` -> `"56088"`
+3. `s = ""` -> `returns the correct empty-input result`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

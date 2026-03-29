@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Dynamic Programming
+- Primary Topic: Strings
 - Folder Path: `leetcode/medium/dynamic_programming/72_edit_distance`
 - Folder Name: `72_edit_distance`
 - Official Link: https://leetcode.com/problems/edit-distance/
 
 ## Problem Overview
-Return the minimum number of insertions, deletions, and replacements needed to convert one word into the other.
+You are given two strings word1 and word2 , return the minimum number of operations required to convert word1 to word2 .
+You have the following three operations permitted on a word
 
 ## Java Starter Signature
 ```java
 public int minDistance(String word1, String word2)
 ```
 
-
 ## Suggested Test Cases
-1. `word1 = "horse", word2 = "ros" -> 3`
-2. `word1 = "intention", word2 = "execution" -> 5`
-3. `word1 = "", word2 = "abc" -> 3`
+1. `word1 = "horse", word2 = "ros"` -> `3`
+2. `word1 = "intention", word2 = "execution"` -> `5`
+3. `s = ""` -> `returns the correct empty-input result`
 
 ## What To Watch For
-- Base cases matter because every later state depends on them.
-- Write down the transition clearly before coding so each state means exactly one thing.
-- Check whether the answer belongs at the final cell, the final index, or the best value seen anywhere.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

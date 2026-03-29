@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Hard
-- Primary Topic: Binary Search
+- Primary Topic: Arrays
 - Folder Path: `leetcode/hard/binary_search/4_median_of_two_sorted_arrays`
 - Folder Name: `4_median_of_two_sorted_arrays`
 - Official Link: https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 ## Problem Overview
-Find the median value after combining two sorted arrays without fully merging them in a slow way.
+You are given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+The overall run time complexity should be O(log (m+n)) .
 
 ## Java Starter Signature
 ```java
 public double findMedianSortedArrays(int[] nums1, int[] nums2)
 ```
 
-
 ## Suggested Test Cases
-1. `nums1 = [1,3], nums2 = [2] -> 2.0`
-2. `nums1 = [1,2], nums2 = [3,4] -> 2.5`
-3. `nums1 = [0,0], nums2 = [0,0] -> 0.0`
+1. `nums1 = [1,3], nums2 = [2]` -> `2.00000`
+2. `nums1 = [1,2], nums2 = [3,4]` -> `2.50000`
+3. `nums = [single element]` -> `returns the correct base-case value`
 
 ## What To Watch For
-- Decide whether the interval is closed or half-open and keep that rule consistent.
-- Midpoint and boundary updates should always shrink the search space.
-- When the loop ends, confirm whether the answer is a found index or an insertion boundary.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

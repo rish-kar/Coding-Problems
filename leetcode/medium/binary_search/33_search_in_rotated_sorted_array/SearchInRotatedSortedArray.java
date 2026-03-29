@@ -1,6 +1,6 @@
 public class SearchInRotatedSortedArray {
     public int search(int[] nums, int target) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

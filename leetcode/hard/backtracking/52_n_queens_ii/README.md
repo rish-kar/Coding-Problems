@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/n-queens-ii/
 
 ## Problem Overview
-Return how many distinct n-queens arrangements exist.
+The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+You are given an integer n , return the number of distinct solutions to the n-queens puzzle .
 
 ## Java Starter Signature
 ```java
 public int totalNQueens(int n)
 ```
 
-
 ## Suggested Test Cases
-1. `n = 4 -> 2`
-2. `n = 1 -> 1`
-3. `n = 5 -> 10`
+1. `n = 4` -> `2`
+2. `n = 1` -> `1`
+3. `second official example` -> `same expected output as the example`
 
 ## What To Watch For
-- Define the stopping condition first so you know exactly when to record an answer.
-- Undo each choice after the recursive call so the next branch starts cleanly.
-- If duplicates are possible, decide where to prune them before recursion explodes.
+- Cover edge inputs explicitly so `totalNQueens` behaves correctly on boundary cases.
+- Maintain the core invariant of your chosen approach at every update step.
+- Return the result in the exact format expected by the LeetCode judge.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 
 ## Problem Overview
-Return the first index where needle appears in haystack, or -1 if it never appears.
+You are given two strings needle and haystack , return the index of the first occurrence of needle in haystack , or -1 if needle is not part of haystack .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public int strStr(String haystack, String needle)
 ```
 
-
 ## Suggested Test Cases
-1. `haystack = "sadbutsad", needle = "sad" -> 0`
-2. `haystack = "leetcode", needle = "leeto" -> -1`
-3. `haystack = "aaaaa", needle = "bba" -> -1`
+1. `haystack = "sadbutsad", needle = "sad"` -> `0`
+2. `haystack = "leetcode", needle = "leeto"` -> `-1`
+3. `s = ""` -> `returns the correct empty-input result`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Backtracking
+- Primary Topic: Strings
 - Folder Path: `leetcode/medium/backtracking/79_word_search`
 - Folder Name: `79_word_search`
 - Official Link: https://leetcode.com/problems/word-search/
 
 ## Problem Overview
-Check whether the word can be formed by sequentially adjacent cells without reusing a cell.
+You are given an m x n grid of characters board and a string word , return true if word exists in the grid .
+The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
 
 ## Java Starter Signature
 ```java
 public boolean exist(char[][] board, String word)
 ```
 
-
 ## Suggested Test Cases
-1. `board = sample grid, word = "ABCCED" -> true`
-2. `board = sample grid, word = "SEE" -> true`
-3. `board = sample grid, word = "ABCB" -> false`
+1. `board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"` -> `true`
+2. `board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"` -> `true`
+3. `board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"` -> `false`
 
 ## What To Watch For
-- Define the stopping condition first so you know exactly when to record an answer.
-- Undo each choice after the recursive call so the next branch starts cleanly.
-- If duplicates are possible, decide where to prune them before recursion explodes.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.
