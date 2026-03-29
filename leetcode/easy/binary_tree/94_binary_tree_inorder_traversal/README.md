@@ -3,30 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Easy
-- Primary Topic: Binary Tree
+- Primary Topic: Stack
 - Folder Path: `leetcode/easy/binary_tree/94_binary_tree_inorder_traversal`
 - Folder Name: `94_binary_tree_inorder_traversal`
 - Official Link: https://leetcode.com/problems/binary-tree-inorder-traversal/
 
 ## Problem Overview
-Return the inorder traversal of the binary tree.
+You are given the root of a binary tree, return the inorder traversal of its nodes' values .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public List<Integer> inorderTraversal(TreeNode root)
 ```
 
-The starter Java file also includes a lightweight `TreeNode` definition so the folder compiles cleanly in isolation.
-
 ## Suggested Test Cases
-1. `root = [1,null,2,3] -> [1,3,2]`
-2. `root = [] -> []`
-3. `root = [1] -> [1]`
+1. `root = [1,null,2,3]` -> `[1,3,2]`
+2. `root = [1,2,3,4,5,null,8,null,null,6,7,9]` -> `[4,2,6,5,7,1,3,9,8]`
+3. `root = []` -> `[]`
 
 ## What To Watch For
-- Handle null children naturally so traversal logic stays simple.
-- Traversal order is the whole point here, so name it clearly before coding.
-- An iterative version may need an explicit stack even if the recursive idea feels easier.
+- Cover edge inputs explicitly so `inorderTraversal` behaves correctly on boundary cases.
+- Maintain the core invariant of your chosen approach at every update step.
+- Return the result in the exact format expected by the LeetCode judge.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

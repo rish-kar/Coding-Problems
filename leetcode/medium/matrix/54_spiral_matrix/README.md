@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Matrix
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/matrix/54_spiral_matrix`
 - Folder Name: `54_spiral_matrix`
 - Official Link: https://leetcode.com/problems/spiral-matrix/
 
 ## Problem Overview
-Return the matrix elements in spiral order.
+You are given an m x n matrix , return all elements of the matrix in spiral order .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public List<Integer> spiralOrder(int[][] matrix)
 ```
 
-
 ## Suggested Test Cases
-1. `matrix = [[1,2,3],[4,5,6],[7,8,9]] -> [1,2,3,6,9,8,7,4,5]`
-2. `matrix = [[1,2,3,4]] -> [1,2,3,4]`
-3. `matrix = [[1],[2],[3]] -> [1,2,3]`
+1. `matrix = [[1,2,3],[4,5,6],[7,8,9]]` -> `[1,2,3,6,9,8,7,4,5]`
+2. `matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]` -> `[1,2,3,4,8,12,11,10,9,5,6,7]`
+3. `nums = [single element]` -> `returns the correct base-case value`
 
 ## What To Watch For
-- Always keep row and column bounds separate so rectangular inputs still work.
-- If you mutate the matrix in place, decide which cells can safely act as markers.
-- Traversal problems usually need a clear visited rule or shrinking boundary rule.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/roman-to-integer/
 
 ## Problem Overview
-Convert a Roman numeral string into its integer value.
+Roman numerals are represented by seven different symbols: I , V , X , L , C , D and M .
+For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII , which is simply X + II . The number 27 is written as XXVII , which is XX + V + II .
 
 ## Java Starter Signature
 ```java
 public int romanToInt(String s)
 ```
 
-
 ## Suggested Test Cases
-1. `s = "III" -> 3`
-2. `s = "LVIII" -> 58`
-3. `s = "MCMXCIV" -> 1994`
+1. `s = "III"` -> `3`
+2. `s = "LVIII"` -> `58`
+3. `s = "MCMXCIV"` -> `1994`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

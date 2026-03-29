@@ -1,6 +1,6 @@
 public class LongestValidParentheses {
     public int longestValidParentheses(String s) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

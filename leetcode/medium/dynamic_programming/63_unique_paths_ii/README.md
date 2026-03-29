@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Dynamic Programming
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/dynamic_programming/63_unique_paths_ii`
 - Folder Name: `63_unique_paths_ii`
 - Official Link: https://leetcode.com/problems/unique-paths-ii/
 
 ## Problem Overview
-Count valid right-and-down paths in a grid that contains blocked cells.
+You are given an m x n integer array grid . There is a robot initially located at the top-left corner (i.e., grid[0][0] ). The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1] ). The robot can only move either down or right at any point in time.
+An obstacle and space are marked as 1 or 0 respectively in grid . A path that the robot takes cannot include any square that is an obstacle.
 
 ## Java Starter Signature
 ```java
 public int uniquePathsWithObstacles(int[][] obstacleGrid)
 ```
 
-
 ## Suggested Test Cases
-1. `obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]] -> 2`
-2. `obstacleGrid = [[0,1],[0,0]] -> 1`
-3. `if the start is blocked, the answer is 0`
+1. `obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]` -> `2`
+2. `obstacleGrid = [[0,1],[0,0]]` -> `1`
+3. `nums = [single element]` -> `returns the correct base-case value`
 
 ## What To Watch For
-- Base cases matter because every later state depends on them.
-- Write down the transition clearly before coding so each state means exactly one thing.
-- Check whether the answer belongs at the final cell, the final index, or the best value seen anywhere.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

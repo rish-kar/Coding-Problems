@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Hard
-- Primary Topic: Monotonic Stack
+- Primary Topic: Arrays
 - Folder Path: `leetcode/hard/monotonic_stack/85_maximal_rectangle`
 - Folder Name: `85_maximal_rectangle`
 - Official Link: https://leetcode.com/problems/maximal-rectangle/
 
 ## Problem Overview
-Return the area of the largest rectangle containing only 1s in the binary matrix.
+You are given a rows x cols binary matrix filled with 0 's and 1 's, find the largest rectangle containing only 1 's and return its area .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public int maximalRectangle(char[][] matrix)
 ```
 
-
 ## Suggested Test Cases
-1. `matrix = sample grid -> 6`
-2. `matrix = [["0"]] -> 0`
-3. `matrix = [["1"]] -> 1`
+1. `matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]` -> `6`
+2. `matrix = [["0"]]` -> `0`
+3. `matrix = [["1"]]` -> `1`
 
 ## What To Watch For
-- Be explicit about whether the stack stays increasing or decreasing.
-- Equal values can change whether you pop now or later, so choose one rule and keep it consistent.
-- Many stack area problems require a final cleanup pass after the main scan.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

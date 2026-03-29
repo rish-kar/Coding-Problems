@@ -1,6 +1,6 @@
 public class NQueensII {
     public int totalNQueens(int n) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/integer-to-roman/
 
 ## Problem Overview
-Convert the integer into its Roman numeral form using the standard subtractive rules.
+Seven different symbols represent Roman numerals with the following values
+Roman numerals are formed by appending the conversions of decimal place values from highest to lowest. Converting a decimal place value into a Roman numeral has the following rules
 
 ## Java Starter Signature
 ```java
 public String intToRoman(int num)
 ```
 
-
 ## Suggested Test Cases
-1. `num = 3 -> "III"`
-2. `num = 58 -> "LVIII"`
-3. `num = 1994 -> "MCMXCIV"`
+1. `num = 3749` -> `"MMMDCCXLIX"`
+2. `num = 58` -> `"LVIII"`
+3. `num = 1994` -> `"MCMXCIV"`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

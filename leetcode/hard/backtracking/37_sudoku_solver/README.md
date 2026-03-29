@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Hard
-- Primary Topic: Backtracking
+- Primary Topic: Arrays
 - Folder Path: `leetcode/hard/backtracking/37_sudoku_solver`
 - Folder Name: `37_sudoku_solver`
 - Official Link: https://leetcode.com/problems/sudoku-solver/
 
 ## Problem Overview
-Fill the Sudoku board in place so that it becomes a valid completed puzzle.
+Write a program to solve a Sudoku puzzle by filling the empty cells.
+A sudoku solution must satisfy all of the following rules
 
 ## Java Starter Signature
 ```java
 public void solveSudoku(char[][] board)
 ```
 
-
 ## Suggested Test Cases
-1. `solve the standard partially filled 9x9 board in place`
-2. `board with many blanks should still finish`
-3. `the final board must satisfy all Sudoku rules`
+1. `board = [["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]` -> `[["5","3","4","6","7","8","9","1","2"],["6","7","2","1","9","5","3","4","8"],["1","9","8","3","4","2","5","6","7"],["8","5","9","7","6","1","4","2","3"],["4","2","6","8","5","3","7","9","1"],["7","1","3","9","2","4","8","5","6"],["9","6","1","5","3","7","2","8","4"],["2","8","7","4","1","9","6","3","5"],["3","4","5","2","8","6","1","7","9"]]`
+2. `input from Example 1` -> `output from Example 1`
+3. `input from Example 2` -> `output from Example 2`
 
 ## What To Watch For
-- Define the stopping condition first so you know exactly when to record an answer.
-- Undo each choice after the recursive call so the next branch starts cleanly.
-- If duplicates are possible, decide where to prune them before recursion explodes.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

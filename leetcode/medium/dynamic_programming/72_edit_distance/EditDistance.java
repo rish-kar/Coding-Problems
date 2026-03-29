@@ -1,6 +1,6 @@
 public class EditDistance {
     public int minDistance(String word1, String word2) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

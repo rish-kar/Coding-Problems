@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/count-and-say/
 
 ## Problem Overview
-Build the nth term of the count-and-say sequence by reading off groups of equal digits.
+The count-and-say sequence is a sequence of digit strings defined by the recursive formula
+Run-length encoding (RLE) is a string compression method that works by replacing consecutive identical characters (repeated 2 or more times) with the concatenation of the character and the number marking the count of the characters (length of the run). For example, to compress the string "3322251" we replace "33" with "23" , replace "222" with "32" , replace "5" with "15" and replace "1" with "11" . Thus the compressed string becomes "23321511" .
 
 ## Java Starter Signature
 ```java
 public String countAndSay(int n)
 ```
 
-
 ## Suggested Test Cases
-1. `n = 1 -> "1"`
-2. `n = 4 -> "1211"`
-3. `n = 5 -> "111221"`
+1. `n = 4` -> `"1211"`
+2. `n = 1` -> `"1"`
+3. `s = ""` -> `returns the correct empty-input result`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

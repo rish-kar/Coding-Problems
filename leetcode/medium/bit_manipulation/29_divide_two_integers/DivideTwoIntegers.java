@@ -1,6 +1,6 @@
 public class DivideTwoIntegers {
     public int divide(int dividend, int divisor) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

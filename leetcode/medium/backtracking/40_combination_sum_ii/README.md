@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Backtracking
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/backtracking/40_combination_sum_ii`
 - Folder Name: `40_combination_sum_ii`
 - Official Link: https://leetcode.com/problems/combination-sum-ii/
 
 ## Problem Overview
-Return all unique combinations that add up to the target when each candidate may be used at most once.
+You are given a collection of candidate numbers ( candidates ) and a target number ( target ), find all unique combinations in candidates where the candidate numbers sum to target .
+Each number in candidates may only be used once in the combination.
 
 ## Java Starter Signature
 ```java
 public List<List<Integer>> combinationSum2(int[] candidates, int target)
 ```
 
-
 ## Suggested Test Cases
-1. `candidates = [10,1,2,7,6,1,5], target = 8 -> unique combinations`
-2. `candidates = [2,5,2,1,2], target = 5 -> [[1,2,2],[5]]`
-3. `candidates = [1,1,1,2], target = 3 -> [[1,1,1],[1,2]]`
+1. `candidates = [10,1,2,7,6,1,5], target = 8` -> `[ [1,1,6], [1,2,5], [1,7], [2,6] ]`
+2. `candidates = [2,5,2,1,2], target = 5` -> `[ [1,2,2], [5] ]`
+3. `nums = [single element]` -> `returns the correct base-case value`
 
 ## What To Watch For
-- Define the stopping condition first so you know exactly when to record an answer.
-- Undo each choice after the recursive call so the next branch starts cleanly.
-- If duplicates are possible, decide where to prune them before recursion explodes.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

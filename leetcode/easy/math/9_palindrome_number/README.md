@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/palindrome-number/
 
 ## Problem Overview
-Check whether the decimal representation of the integer is the same from left to right and right to left.
+You are given an integer x , return true if x is a palindrome , and false otherwise .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public boolean isPalindrome(int x)
 ```
 
-
 ## Suggested Test Cases
-1. `x = 121 -> true`
-2. `x = -121 -> false`
-3. `x = 10 -> false`
+1. `x = 121` -> `true`
+2. `x = -121` -> `false`
+3. `x = 10` -> `false`
 
 ## What To Watch For
-- Check overflow boundaries before returning the result.
-- Negative values and zero often need separate reasoning from the main positive case.
-- Look for repeated structure that can be reduced with arithmetic instead of brute force.
+- Handle odd and even length cases correctly when comparing mirrored characters.
+- Normalize or skip non-relevant characters only if the problem statement requires it.
+- Stop early once a mismatch proves the answer cannot be valid.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

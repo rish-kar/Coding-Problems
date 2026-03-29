@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/valid-number/
 
 ## Problem Overview
-Determine whether the string represents a valid decimal or scientific-notation number.
+You are given a string s , return whether s is a valid number . For example, all the following are valid numbers: "2", "0089", "-0.1", "+3.14", "4.", "-.9", "2e10", "-90E3", "3e+7", "+6e-1", "53.5e93", "-123.456e789" , while the following are not valid numbers: "abc", "1a", "1e", "e3", "99e2.5", "--6", "-+3", "95a54e53" .
+Formally, a valid number is defined using one of the following definitions
 
 ## Java Starter Signature
 ```java
 public boolean isNumber(String s)
 ```
 
-
 ## Suggested Test Cases
-1. `s = "0" -> true`
-2. `s = "e" -> false`
-3. `s = ".1" -> true`
+1. `s = "0"` -> `true`
+2. `s = "e"` -> `false`
+3. `s = "."` -> `false`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

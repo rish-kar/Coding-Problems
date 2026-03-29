@@ -1,6 +1,6 @@
-public class Sqrtx {
+public class SqrtX {
     public int mySqrt(int x) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

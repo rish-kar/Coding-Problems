@@ -1,6 +1,6 @@
 public class TrappingRainWater {
     public int trap(int[] height) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

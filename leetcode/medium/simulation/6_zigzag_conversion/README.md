@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Simulation
+- Primary Topic: Strings
 - Folder Path: `leetcode/medium/simulation/6_zigzag_conversion`
 - Folder Name: `6_zigzag_conversion`
 - Official Link: https://leetcode.com/problems/zigzag-conversion/
 
 ## Problem Overview
-Write the string in a zigzag pattern across the given number of rows and then read it row by row.
+The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+And then read line by line: "PAHNAPLSIIGYIR"
 
 ## Java Starter Signature
 ```java
 public String convert(String s, int numRows)
 ```
 
-
 ## Suggested Test Cases
-1. `s = "PAYPALISHIRING", numRows = 3 -> "PAHNAPLSIIGYIR"`
-2. `s = "PAYPALISHIRING", numRows = 4 -> "PINALSIGYAHRPI"`
-3. `s = "A", numRows = 1 -> "A"`
+1. `s = "PAYPALISHIRING", numRows = 3` -> `"PAHNAPLSIIGYIR"`
+2. `s = "PAYPALISHIRING", numRows = 4` -> `"PINALSIGYAHRPI"`
+3. `s = "A", numRows = 1` -> `"A"`
 
 ## What To Watch For
-- Write down the movement pattern or state transitions before coding them.
-- Special cases like a single row or single column can bypass the normal flow.
-- The index update order matters whenever direction changes happen.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

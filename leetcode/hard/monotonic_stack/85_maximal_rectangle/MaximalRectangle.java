@@ -1,6 +1,6 @@
 public class MaximalRectangle {
     public int maximalRectangle(char[][] matrix) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

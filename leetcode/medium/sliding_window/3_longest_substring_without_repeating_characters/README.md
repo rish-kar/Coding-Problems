@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Sliding Window
+- Primary Topic: Strings
 - Folder Path: `leetcode/medium/sliding_window/3_longest_substring_without_repeating_characters`
 - Folder Name: `3_longest_substring_without_repeating_characters`
 - Official Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 ## Problem Overview
-Return the length of the longest substring that contains no repeated characters.
+You are given a string s , find the length of the longest substring without duplicate characters.
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public int lengthOfLongestSubstring(String s)
 ```
 
-
 ## Suggested Test Cases
-1. `s = "abcabcbb" -> 3`
-2. `s = "bbbbb" -> 1`
-3. `s = "pwwkew" -> 3`
+1. `s = "abcabcbb"` -> `3`
+2. `s = "bbbbb"` -> `1`
+3. `s = "pwwkew"` -> `3`
 
 ## What To Watch For
-- Update the window state in the same order every time you expand or shrink.
-- Character counts or last-seen positions usually matter more than the raw substring itself.
-- Remember to compare answers after the final shrink or expansion step too.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

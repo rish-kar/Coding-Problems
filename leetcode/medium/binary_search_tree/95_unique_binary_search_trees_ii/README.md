@@ -9,24 +9,23 @@
 - Official Link: https://leetcode.com/problems/unique-binary-search-trees-ii/
 
 ## Problem Overview
-Return every structurally unique BST that stores values 1 through n.
+You are given an integer n , return all the structurally unique BST' s (binary search trees), which has exactly n nodes of unique values from 1 to n . Then return the answer in any order .
+Focus on boundary cases so the method stays correct for small or extreme inputs.
 
 ## Java Starter Signature
 ```java
 public List<TreeNode> generateTrees(int n)
 ```
 
-The starter Java file also includes a lightweight `TreeNode` definition so the folder compiles cleanly in isolation.
-
 ## Suggested Test Cases
-1. `n = 3 -> 5 unique BST roots`
-2. `n = 1 -> single-node tree`
-3. `n = 0 -> []`
+1. `n = 3` -> `[[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]`
+2. `n = 1` -> `[[1]]`
+3. `second official example` -> `same expected output as the example`
 
 ## What To Watch For
-- Use the BST ordering rule globally, not just between a node and its direct children.
-- Inorder traversal is often the easiest way to expose the sorted-value property.
-- Be careful with duplicate values because many BST problems require strict inequality.
+- Cover edge inputs explicitly so `generateTrees` behaves correctly on boundary cases.
+- Maintain the core invariant of your chosen approach at every update step.
+- Return the result in the exact format expected by the LeetCode judge.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/permutation-sequence/
 
 ## Problem Overview
-Return the kth permutation sequence of the numbers 1 through n.
+The set [1, 2, 3, ..., n] contains a total of n! unique permutations.
+By listing and labeling all of the permutations in order, we get the following sequence for n = 3
 
 ## Java Starter Signature
 ```java
 public String getPermutation(int n, int k)
 ```
 
-
 ## Suggested Test Cases
-1. `n = 3, k = 3 -> "213"`
-2. `n = 4, k = 9 -> "2314"`
-3. `n = 3, k = 1 -> "123"`
+1. `n = 3, k = 3` -> `"213"`
+2. `n = 4, k = 9` -> `"2314"`
+3. `n = 3, k = 1` -> `"123"`
 
 ## What To Watch For
-- Check overflow boundaries before returning the result.
-- Negative values and zero often need separate reasoning from the main positive case.
-- Look for repeated structure that can be reduced with arithmetic instead of brute force.
+- Cover edge inputs explicitly so `getPermutation` behaves correctly on boundary cases.
+- Maintain the core invariant of your chosen approach at every update step.
+- Return the result in the exact format expected by the LeetCode judge.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/longest-common-prefix/
 
 ## Problem Overview
-Return the longest prefix shared by every string in the array.
+Write a function to find the longest common prefix string amongst an array of strings.
+If there is no common prefix, return an empty string "" .
 
 ## Java Starter Signature
 ```java
 public String longestCommonPrefix(String[] strs)
 ```
 
-
 ## Suggested Test Cases
-1. `strs = ["flower","flow","flight"] -> "fl"`
-2. `strs = ["dog","racecar","car"] -> ""`
-3. `strs = ["interspecies","interstellar","interstate"] -> "inters"`
+1. `strs = ["flower","flow","flight"]` -> `"fl"`
+2. `strs = ["dog","racecar","car"]` -> `""`
+3. `s = ""` -> `returns the correct empty-input result`
 
 ## What To Watch For
-- Pay close attention to spaces, punctuation, repeated characters, and empty-string behavior.
-- Parsing problems usually have a strict order of operations, so handle sign and invalid input carefully.
-- When building a result string, think about whether repeated concatenation should be avoided.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

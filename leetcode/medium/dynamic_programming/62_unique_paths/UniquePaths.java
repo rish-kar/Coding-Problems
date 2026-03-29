@@ -1,6 +1,6 @@
 public class UniquePaths {
     public int uniquePaths(int m, int n) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

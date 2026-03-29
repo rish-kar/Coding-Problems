@@ -1,6 +1,6 @@
 public class ValidSudoku {
     public boolean isValidSudoku(char[][] board) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return false;
     }
 }

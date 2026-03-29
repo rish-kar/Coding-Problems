@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Greedy
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/greedy/45_jump_game_ii`
 - Folder Name: `45_jump_game_ii`
 - Official Link: https://leetcode.com/problems/jump-game-ii/
 
 ## Problem Overview
-Return the minimum number of jumps needed to reach the last index.
+You are given a 0-indexed array of integers nums of length n . You are initially positioned at index 0.
+Each element nums[i] represents the maximum length of a forward jump from index i . In other words, if you are at index i , you can jump to any index (i + j) where
 
 ## Java Starter Signature
 ```java
 public int jump(int[] nums)
 ```
 
-
 ## Suggested Test Cases
-1. `nums = [2,3,1,1,4] -> 2`
-2. `nums = [2,3,0,1,4] -> 2`
-3. `nums = [0] -> 0`
+1. `nums = [2,3,1,1,4]` -> `2`
+2. `nums = [2,3,0,1,4]` -> `2`
+3. `nums = [single element]` -> `returns the correct base-case value`
 
 ## What To Watch For
-- Track the best local choice only when you can explain why it preserves a global optimum.
-- Check unreachable cases separately from cases that merely need more steps.
-- A running farthest reach or current layer boundary often reveals the solution structure.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

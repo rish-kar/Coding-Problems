@@ -9,32 +9,32 @@
 - Official Link: https://leetcode.com/problems/sqrtx/
 
 ## Problem Overview
-Return the integer square root of x, truncating any fractional part.
+You are given a non-negative integer x , return the square root of x rounded down to the nearest integer . The returned integer should be non-negative as well.
+You must not use any built-in exponent function or operator.
 
 ## Java Starter Signature
 ```java
 public int mySqrt(int x)
 ```
 
-
 ## Suggested Test Cases
-1. `x = 4 -> 2`
-2. `x = 8 -> 2`
-3. `x = 1 -> 1`
+1. `x = 4` -> `2`
+2. `x = 8` -> `2`
+3. `input from Example 1` -> `output from Example 1`
 
 ## What To Watch For
-- Decide whether the interval is closed or half-open and keep that rule consistent.
-- Midpoint and boundary updates should always shrink the search space.
-- When the loop ends, confirm whether the answer is a found index or an insertion boundary.
+- Keep interval boundaries consistent (`[low, high]` or `[low, high)`) through the whole loop.
+- Recompute the midpoint safely and update the correct boundary each step.
+- Return the exact index/boundary requested, not just any matching position.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.
 
-- `Sqrtx.java` contains the correct class name and Java method signature.
-- `SqrtxTest.java` contains scaffold test-case notes that you can convert into real assertions after implementing the solution.
+- `SqrtX.java` contains the correct class name and Java method signature.
+- `SqrtXTest.java` contains scaffold test-case notes that you can convert into real assertions after implementing the solution.
 - `README.md` gives you a quick revision-friendly summary before you start coding.
 
 ## Folder Contents
-- `Sqrtx.java` - blank Java starter solution
-- `SqrtxTest.java` - starter test scaffold
+- `SqrtX.java` - blank Java starter solution
+- `SqrtXTest.java` - starter test scaffold
 - `README.md` - detailed problem notes and folder guide

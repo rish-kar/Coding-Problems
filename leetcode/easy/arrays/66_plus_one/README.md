@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/plus-one/
 
 ## Problem Overview
-Add one to the large integer represented by the array of digits.
+You are given a large integer represented as an integer array digits , where each digits[i] is the i th digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0 's.
+Increment the large integer by one and return the resulting array of digits .
 
 ## Java Starter Signature
 ```java
 public int[] plusOne(int[] digits)
 ```
 
-
 ## Suggested Test Cases
-1. `digits = [1,2,3] -> [1,2,4]`
-2. `digits = [4,3,2,1] -> [4,3,2,2]`
-3. `digits = [9] -> [1,0]`
+1. `digits = [1,2,3]` -> `[1,2,4]`
+2. `digits = [4,3,2,1]` -> `[4,3,2,2]`
+3. `digits = [9]` -> `[1,0]`
 
 ## What To Watch For
-- Check small lengths like 0, 1, and 2 before assuming a longer scan is possible.
-- Be careful with in-place updates so you do not overwrite values you still need to read.
-- Watch for off-by-one errors when returning a new length or slicing a kept prefix.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

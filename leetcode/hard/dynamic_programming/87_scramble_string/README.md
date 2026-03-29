@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Hard
-- Primary Topic: Dynamic Programming
+- Primary Topic: Strings
 - Folder Path: `leetcode/hard/dynamic_programming/87_scramble_string`
 - Folder Name: `87_scramble_string`
 - Official Link: https://leetcode.com/problems/scramble-string/
 
 ## Problem Overview
-Determine whether one string can be transformed into the other by recursively swapping non-empty partitions.
+We can scramble a string s to get a string t using the following algorithm
+You are given two strings s1 and s2 of the same length , return true if s2 is a scrambled string of s1 , otherwise, return false .
 
 ## Java Starter Signature
 ```java
 public boolean isScramble(String s1, String s2)
 ```
 
-
 ## Suggested Test Cases
-1. `s1 = "great", s2 = "rgeat" -> true`
-2. `s1 = "abcde", s2 = "caebd" -> false`
-3. `s1 = "a", s2 = "a" -> true`
+1. `s1 = "great", s2 = "rgeat"` -> `true`
+2. `s1 = "abcde", s2 = "caebd"` -> `false`
+3. `s1 = "a", s2 = "a"` -> `true`
 
 ## What To Watch For
-- Base cases matter because every later state depends on them.
-- Write down the transition clearly before coding so each state means exactly one thing.
-- Check whether the answer belongs at the final cell, the final index, or the best value seen anywhere.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

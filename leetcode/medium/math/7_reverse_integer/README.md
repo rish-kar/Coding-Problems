@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/reverse-integer/
 
 ## Problem Overview
-Reverse the digits of the integer and return 0 if the reversed value falls outside the 32-bit signed range.
+You are given a signed 32-bit integer x , return x with its digits reversed . If reversing x causes the value to go outside the signed 32-bit integer range [-2 31 , 2 31 - 1] , then return 0 .
+Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
 ## Java Starter Signature
 ```java
 public int reverse(int x)
 ```
 
-
 ## Suggested Test Cases
-1. `x = 123 -> 321`
-2. `x = -123 -> -321`
-3. `x = 1534236469 -> 0`
+1. `x = 123` -> `321`
+2. `x = -123` -> `-321`
+3. `x = 120` -> `21`
 
 ## What To Watch For
-- Check overflow boundaries before returning the result.
-- Negative values and zero often need separate reasoning from the main positive case.
-- Look for repeated structure that can be reduced with arithmetic instead of brute force.
+- Cover edge inputs explicitly so `reverse` behaves correctly on boundary cases.
+- Maintain the core invariant of your chosen approach at every update step.
+- Return the result in the exact format expected by the LeetCode judge.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Matrix
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/matrix/48_rotate_image`
 - Folder Name: `48_rotate_image`
 - Official Link: https://leetcode.com/problems/rotate-image/
 
 ## Problem Overview
-Rotate the square matrix by 90 degrees clockwise in place.
+You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
+You have to rotate the image in-place , which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
 
 ## Java Starter Signature
 ```java
 public void rotate(int[][] matrix)
 ```
 
-
 ## Suggested Test Cases
-1. `matrix = [[1,2,3],[4,5,6],[7,8,9]] -> [[7,4,1],[8,5,2],[9,6,3]]`
-2. `matrix = [[1,2],[3,4]] -> [[3,1],[4,2]]`
-3. `a 1x1 matrix stays unchanged`
+1. `matrix = [[1,2,3],[4,5,6],[7,8,9]]` -> `[[7,4,1],[8,5,2],[9,6,3]]`
+2. `matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]` -> `[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]`
+3. `nums = [single element]` -> `returns the correct base-case value`
 
 ## What To Watch For
-- Always keep row and column bounds separate so rectangular inputs still work.
-- If you mutate the matrix in place, decide which cells can safely act as markers.
-- Traversal problems usually need a clear visited rule or shrinking boundary rule.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

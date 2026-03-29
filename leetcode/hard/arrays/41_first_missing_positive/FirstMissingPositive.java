@@ -1,6 +1,6 @@
 public class FirstMissingPositive {
     public int firstMissingPositive(int[] nums) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }

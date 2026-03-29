@@ -1,6 +1,6 @@
 public class ValidNumber {
     public boolean isNumber(String s) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return false;
     }
 }

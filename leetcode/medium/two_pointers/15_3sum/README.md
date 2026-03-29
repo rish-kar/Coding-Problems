@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Two Pointers
+- Primary Topic: Arrays
 - Folder Path: `leetcode/medium/two_pointers/15_3sum`
 - Folder Name: `15_3sum`
 - Official Link: https://leetcode.com/problems/3sum/
 
 ## Problem Overview
-Return all unique triplets whose values add up to zero.
+You are given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j , i != k , and j != k , and nums[i] + nums[j] + nums[k] == 0 .
+Notice that the solution set must not contain duplicate triplets.
 
 ## Java Starter Signature
 ```java
 public List<List<Integer>> threeSum(int[] nums)
 ```
 
-
 ## Suggested Test Cases
-1. `nums = [-1,0,1,2,-1,-4] -> [[-1,-1,2],[-1,0,1]]`
-2. `nums = [0,1,1] -> []`
-3. `nums = [0,0,0] -> [[0,0,0]]`
+1. `nums = [-1,0,1,2,-1,-4]` -> `[[-1,-1,2],[-1,0,1]]`
+2. `nums = [0,1,1]` -> `[]`
+3. `nums = [0,0,0]` -> `[[0,0,0]]`
 
 ## What To Watch For
-- Move the pointer that can actually improve the answer instead of advancing both blindly.
-- Sorted input often enables duplicate skipping and targeted pointer motion.
-- Test very small inputs because pointer crossings are a common source of bugs.
+- Guard array boundaries whenever indices move or swap operations occur.
+- Account for empty and single-element arrays before the main logic.
+- If in-place behavior is expected, avoid extra structures that change space complexity.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -9,23 +9,23 @@
 - Official Link: https://leetcode.com/problems/combinations/
 
 ## Problem Overview
-Return every way to choose k numbers from the range 1 through n.
+You are given two integers n and k , return all possible combinations of k numbers chosen from the range [1, n] .
+You may return the answer in any order .
 
 ## Java Starter Signature
 ```java
 public List<List<Integer>> combine(int n, int k)
 ```
 
-
 ## Suggested Test Cases
-1. `n = 4, k = 2 -> 6 combinations`
-2. `n = 1, k = 1 -> [[1]]`
-3. `n = 5, k = 3 -> all size-3 combinations`
+1. `n = 4, k = 2` -> `[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]`
+2. `n = 1, k = 1` -> `[[1]]`
+3. `input from Example 1` -> `output from Example 1`
 
 ## What To Watch For
-- Define the stopping condition first so you know exactly when to record an answer.
-- Undo each choice after the recursive call so the next branch starts cleanly.
-- If duplicates are possible, decide where to prune them before recursion explodes.
+- Cover edge inputs explicitly so `combine` behaves correctly on boundary cases.
+- Maintain the core invariant of your chosen approach at every update step.
+- Return the result in the exact format expected by the LeetCode judge.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

@@ -3,29 +3,29 @@
 ## Metadata
 - Platform: LeetCode
 - Difficulty: Medium
-- Primary Topic: Stack
+- Primary Topic: Strings
 - Folder Path: `leetcode/medium/stack/71_simplify_path`
 - Folder Name: `71_simplify_path`
 - Official Link: https://leetcode.com/problems/simplify-path/
 
 ## Problem Overview
-Convert the Unix-style path into its canonical simplified form.
+You are given an absolute path for a Unix-style file system, which always begins with a slash '/' . Your task is to transform this absolute path into its simplified canonical path .
+The rules of a Unix-style file system are as follows
 
 ## Java Starter Signature
 ```java
 public String simplifyPath(String path)
 ```
 
-
 ## Suggested Test Cases
-1. `path = "/home/" -> "/home"`
-2. `path = "/../" -> "/"`
-3. `path = "/home//foo/" -> "/home/foo"`
+1. `path = "/home/"` -> `"/home"`
+2. `path = "/home//foo/"` -> `"/home/foo"`
+3. `path = "/home/user/Documents/../Pictures"` -> `"/home/user/Pictures"`
 
 ## What To Watch For
-- A stack is only helpful if you know what invariant each element represents.
-- Unmatched opening and closing symbols should be handled explicitly.
-- Do not forget any cleanup step after the main scan finishes.
+- Check empty-string and single-character edge cases first.
+- Update indices carefully so character comparisons stay in bounds.
+- Avoid unnecessary substring copies inside tight loops.
 
 ## Starter File Status
 This folder is prepared as a starter workspace for solving the problem yourself.

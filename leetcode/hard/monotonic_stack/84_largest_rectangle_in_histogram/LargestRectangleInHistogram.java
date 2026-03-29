@@ -1,6 +1,6 @@
 public class LargestRectangleInHistogram {
     public int largestRectangleArea(int[] heights) {
-        // TODO: Implement this method.
+        // TODO: Implement solution.
         return 0;
     }
 }
