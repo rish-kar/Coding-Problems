@@ -1,17 +1,16 @@
 public class SearchInsertPosition {
   public int searchInsert(int[] nums, int target) {
-    // Linear scan: return existing index or the first position where target can be inserted.
-    int i;
+    // Case 1: Linear scan.
+    int insertionIndex;
 
-    for (i = 0; i < nums.length; i++) {
-      if (nums[i] == target) {
-        return i;
-      } else {
-        if (target < nums[i]) {
-          return i;
-        }
-      }
+    for (insertionIndex = 0; insertionIndex < nums.length; insertionIndex++) {
+      // Case 2: Found exact match.
+      if (nums[insertionIndex] == target) return insertionIndex;
+
+      // Case 3: First bigger number -> this is the insert position.
+      if (target < nums[insertionIndex]) return insertionIndex;
     }
-    return i;
+
+    return insertionIndex;
   }
 }

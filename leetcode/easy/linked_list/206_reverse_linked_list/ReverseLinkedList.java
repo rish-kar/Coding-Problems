@@ -10,18 +10,19 @@
  */
 public class ReverseLinkedList {
   public ListNode reverseList(ListNode head) {
-    // Iterative in-place reversal.
-    ListNode newHead = null;
+    // Case 1: Iterative in-place reversal.
+    ListNode reversedListHead = null;
 
-    while (head != null) {
-      // Standard pointer flip.
-      ListNode next = head.next;
-      head.next = newHead;
-      newHead = head;
-      head = next;
+    // Case 2: Walk the list and flip pointers.
+    ListNode currentNode = head;
+    while (currentNode != null) {
+      ListNode nextNode = currentNode.next;
+      currentNode.next = reversedListHead;
+      reversedListHead = currentNode;
+      currentNode = nextNode;
     }
 
-    return newHead;
+    return reversedListHead;
   }
 }
 

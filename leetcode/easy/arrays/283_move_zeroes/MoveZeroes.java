@@ -1,21 +1,26 @@
 public class MoveZeroes {
   public void moveZeroes(int[] nums) {
+    // Case 1: One element -> nothing to move.
     if (nums.length == 1) return;
 
-    for (int i = 0, j = 1; i < nums.length - 1 && j < nums.length; j++) {
+    // Case 2: Two pointers.
+    // leftPointer -> where the next non-zero should go.
+    // scanPointer -> scans ahead looking for the next non-zero.
+    for (int leftPointer = 0, scanPointer = 1;
+         leftPointer < nums.length - 1 && scanPointer < nums.length;
+         scanPointer++) {
 
-      if (nums[i] == 0) {
-        // Find the next non-zero and swap it into position i.
-        if (nums[j] != 0) {
-          nums[i] = nums[j];
-          nums[j] = 0;
-          i++;
-          j = i;
+      // Case 3: Current slot is zero -> swap in the next non-zero.
+      if (nums[leftPointer] == 0) {
+        if (nums[scanPointer] != 0) {
+          nums[leftPointer] = nums[scanPointer];
+          nums[scanPointer] = 0;
+          leftPointer++;
+          scanPointer = leftPointer;
         }
-      } else if (nums[i] != 0) {
-        // Current value is already fine; advance i.
-        i++;
-        j = i;
+      } else {
+        leftPointer++;
+        scanPointer = leftPointer;
       }
     }
   }
