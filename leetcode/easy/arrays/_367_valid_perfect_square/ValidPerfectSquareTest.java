@@ -1,0 +1,8 @@
+﻿package easy.arrays._367_valid_perfect_square;
+
+public class ValidPerfectSquareTest {
+
+    public static void main(String[] args) {
+        // Test cases will be added after implementing the solution.
+    }
+}

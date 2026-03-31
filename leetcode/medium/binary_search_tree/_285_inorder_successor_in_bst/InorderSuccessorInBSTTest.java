@@ -1,0 +1,8 @@
+﻿package medium.binary_search_tree._285_inorder_successor_in_bst;
+
+public class InorderSuccessorInBSTTest {
+
+    public static void main(String[] args) {
+        // Test cases will be added after implementing the solution.
+    }
+}

@@ -23,7 +23,7 @@ A long-term coding practice repository for keeping each problem in a self-contai
 | geeksforgeeks | 0 | 0 | ⬜ | `geeksforgeeks/` |
 | hackerrank | 0 | 0 | ⬜ | `hackerrank/` |
 | interviewbit | 0 | 0 | ⬜ | `interviewbit/` |
-| leetcode | 368 | 25 | ✅ | `leetcode/` |
+| leetcode | 368 | 26 | ✅ | `leetcode/` |
 | spoj | 0 | 0 | ⬜ | `spoj/` |
 
 ## Active structure in this repository
@@ -31,10 +31,10 @@ Every platform currently uses the same top-level difficulty buckets that already
 
 ```text
 platform/
-├─ easy/
-├─ medium/
-├─ hard/
-└─ advanced/
+â”œâ”€ easy/
+â”œâ”€ medium/
+â”œâ”€ hard/
+â””â”€ advanced/
 ```
 
 Inside each difficulty folder, reusable topic folders are used to keep problems discoverable and consistent.
@@ -111,4 +111,5 @@ Use `leetcode/README.md` for the detailed master index that lists:
 - its difficulty
 - its primary topic category
 - its problem number and title
+
 
