@@ -1,6 +1,0 @@
-public class UTFEightValidation {
-    public boolean validUtf8(int[] data) {
-        // TODO: Implement solution.
-        return false;
-    }
-}
