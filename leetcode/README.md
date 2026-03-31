@@ -113,7 +113,7 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | 64 | Minimum Path Sum | Medium | Dynamic Programming | leetcode/medium/dynamic_programming/_64_minimum_path_sum | ⬜ |
 | 65 | Valid Number | Hard | Strings | leetcode/hard/strings/_65_valid_number | ⬜ |
 | 66 | Plus One | Easy | Arrays | leetcode/easy/arrays/_66_plus_one | ✅ |
-| 67 | Add Binary | Easy | Strings | leetcode/easy/strings/_67_add_binary | ⬜ |
+| 67 | Add Binary | Easy | Strings | leetcode/easy/strings/_67_add_binary | ✅ |
 | 68 | Text Justification | Hard | Strings | leetcode/hard/strings/_68_text_justification | ⬜ |
 | 69 | Sqrtx | Easy | Binary Search | leetcode/easy/binary_search/_69_sqrtx | ⬜ |
 | 70 | Climbing Stairs | Easy | Dynamic Programming | leetcode/easy/dynamic_programming/_70_climbing_stairs | ⬜ |
