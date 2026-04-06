@@ -1,0 +1,8 @@
+package medium.stack._71_simplify_path;
+
+public class SimplifyPathTest {
+
+    public static void main(String[] args) {
+        // Test cases will be added after implementing the solution.
+    }
+}

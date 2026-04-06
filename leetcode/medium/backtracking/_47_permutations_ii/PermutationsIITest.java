@@ -1,0 +1,8 @@
+package medium.backtracking._47_permutations_ii;
+
+public class PermutationsIITest {
+
+    public static void main(String[] args) {
+        // Test cases will be added after implementing the solution.
+    }
+}
