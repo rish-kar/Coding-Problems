@@ -175,7 +175,7 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | 126 | Word Ladder II | Hard | Graph | leetcode/hard/graph/_126_word_ladder_ii | ⬜ |
 | 127 | Word Ladder | Hard | Graph | leetcode/hard/graph/_127_word_ladder | ⬜ |
 | 128 | Longest Consecutive Sequence | Medium | Arrays | leetcode/medium/arrays/_128_longest_consecutive_sequence | ⬜ |
-| 129 | Sum Root To Leaf Numbers | Medium | Sql | leetcode/medium/sql/_129_sum_root_to_leaf_numbers | ⬜ |
+| 129 | Sum Root To Leaf Numbers | Medium | Binary Tree | leetcode/medium/sql/_129_sum_root_to_leaf_numbers | ⬜ |
 | 130 | Surrounded Regions | Medium | Arrays | leetcode/medium/arrays/_130_surrounded_regions | ⬜ |
 | 131 | Palindrome Partitioning | Medium | Two Pointers | leetcode/medium/two_pointers/_131_palindrome_partitioning | ⬜ |
 | 132 | Palindrome Partitioning II | Hard | Two Pointers | leetcode/hard/two_pointers/_132_palindrome_partitioning_ii | ⬜ |
@@ -248,18 +248,18 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | 198 | House Robber | Medium | Dynamic Programming | leetcode/medium/dynamic_programming/_198_house_robber | ⬜ |
 | 199 | Binary Tree Right Side View | Medium | Binary Tree | leetcode/medium/binary_tree/_199_binary_tree_right_side_view | ⬜ |
 | 200 | Number Of Islands | Medium | Graph | leetcode/medium/graph/_200_number_of_islands | ⬜ |
-| 201 | Bitwise And Of Numbers Range | Medium | Sql | leetcode/medium/sql/_201_bitwise_and_of_numbers_range | ⬜ |
+| 201 | Bitwise And Of Numbers Range | Medium | Bit Manipulation | leetcode/medium/sql/_201_bitwise_and_of_numbers_range | ⬜ |
 | 202 | Happy Number | Easy | Math | leetcode/easy/math/_202_happy_number | ⬜ |
 | 203 | Remove Linked List Elements | Easy | Linked List | leetcode/easy/linked_list/_203_remove_linked_list_elements | ⬜ |
 | 204 | Count Primes | Medium | Math | leetcode/medium/math/_204_count_primes | ⬜ |
 | 205 | Isomorphic Strings | Easy | Strings | leetcode/easy/strings/_205_isomorphic_strings | ⬜ |
 | 206 | Reverse Linked List | Easy | Linked List | leetcode/easy/linked_list/_206_reverse_linked_list | ✅ |
 | 207 | Course Schedule | Medium | Graph | leetcode/medium/graph/_207_course_schedule | ⬜ |
-| 208 | Implement Trie Prefix Tree | Medium | Binary Tree | leetcode/medium/binary_tree/_208_implement_trie_prefix_tree | ⬜ |
+| 208 | Implement Trie Prefix Tree | Medium | Graph | leetcode/medium/binary_tree/_208_implement_trie_prefix_tree | ⬜ |
 | 209 | Minimum Size Subarray Sum | Medium | Arrays | leetcode/medium/arrays/_209_minimum_size_subarray_sum | ⬜ |
 | 210 | Course Schedule II | Medium | Graph | leetcode/medium/graph/_210_course_schedule_ii | ⬜ |
 | 217 | Contains Duplicate | Easy | Arrays | leetcode/easy/arrays/_217_contains_duplicate | ⬜ |
-| 217 | Contains Duplicate | Easy | Hash Map | leetcode/easy/hash_map/_217_contains_duplicate | ✅ |
+| 217 | Contains Duplicate | Easy | Hash Map | leetcode/easy/hash_map/_217_contains_duplicate | ⬜ |
 | 218 | The Skyline Problem | Hard | Arrays | leetcode/hard/arrays/_218_the_skyline_problem | ⬜ |
 | 219 | Contains Duplicate II | Easy | Hash Map | leetcode/easy/hash_map/_219_contains_duplicate_ii | ✅ |
 | 220 | Contains Duplicate III | Hard | Hash Map | leetcode/hard/hash_map/_220_contains_duplicate_iii | ⬜ |
@@ -298,7 +298,7 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | 257 | Binary Tree Paths | Easy | Binary Tree | leetcode/easy/binary_tree/_257_binary_tree_paths | ⬜ |
 | 258 | Add Digits | Easy | Math | leetcode/easy/math/_258_add_digits | ⬜ |
 | 260 | Single Number III | Medium | Arrays | leetcode/medium/arrays/_260_single_number_iii | ⬜ |
-| 261 | Graph Valid Tree | Medium | Binary Tree | leetcode/medium/binary_tree/_261_graph_valid_tree | ⬜ |
+| 261 | Graph Valid Tree | Medium | Graph | leetcode/medium/binary_tree/_261_graph_valid_tree | ⬜ |
 | 263 | Ugly Number | Easy | Math | leetcode/easy/math/_263_ugly_number | ⬜ |
 | 264 | Ugly Number II | Medium | Math | leetcode/medium/math/_264_ugly_number_ii | ⬜ |
 | 265 | Paint House II | Hard | Arrays | leetcode/hard/arrays/_265_paint_house_ii | ⬜ |
@@ -343,7 +343,7 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | 312 | Burst Balloons | Hard | Dynamic Programming | leetcode/hard/dynamic_programming/_312_burst_balloons | ⬜ |
 | 313 | Super Ugly Number | Medium | Math | leetcode/medium/math/_313_super_ugly_number | ⬜ |
 | 314 | Binary Tree Vertical Order Traversal | Medium | Binary Tree | leetcode/medium/binary_tree/_314_binary_tree_vertical_order_traversal | ⬜ |
-| 315 | Count Of Smaller Numbers After Self | Hard | Sql | leetcode/hard/sql/_315_count_of_smaller_numbers_after_self | ⬜ |
+| 315 | Count Of Smaller Numbers After Self | Hard | Binary Search | leetcode/hard/sql/_315_count_of_smaller_numbers_after_self | ⬜ |
 | 317 | Shortest Distance From All Buildings | Hard | Arrays | leetcode/hard/arrays/_317_shortest_distance_from_all_buildings | ⬜ |
 | 318 | Maximum Product Of Word Lengths | Medium | Arrays | leetcode/medium/arrays/_318_maximum_product_of_word_lengths | ⬜ |
 | 319 | Bulb Switcher | Medium | Math | leetcode/medium/math/_319_bulb_switcher | ⬜ |
@@ -360,7 +360,7 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | 337 | House Robber III | Medium | Dynamic Programming | leetcode/medium/dynamic_programming/_337_house_robber_iii | ⬜ |
 | 338 | Counting Bits | Easy | Arrays | leetcode/easy/arrays/_338_counting_bits | ⬜ |
 | 339 | Nested List Weight Sum | Medium | Arrays | leetcode/medium/arrays/_339_nested_list_weight_sum | ⬜ |
-| 340 | Longest Substring With At Most K Distinct Characters | Medium | Binary Search Tree | leetcode/medium/binary_search_tree/_340_longest_substring_with_at_most_k_distinct_characters | ⬜ |
+| 340 | Longest Substring With At Most K Distinct Characters | Medium | Sliding Window | leetcode/medium/binary_search_tree/_340_longest_substring_with_at_most_k_distinct_characters | ⬜ |
 | 341 | Flatten Nested List Iterator | Medium | Arrays | leetcode/medium/arrays/_341_flatten_nested_list_iterator | ⬜ |
 | 342 | Power Of Four | Easy | Math | leetcode/easy/math/_342_power_of_four | ⬜ |
 | 343 | Integer Break | Medium | Arrays | leetcode/medium/arrays/_343_integer_break | ⬜ |
@@ -375,7 +375,7 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | 354 | Russian Doll Envelopes | Hard | Arrays | leetcode/hard/arrays/_354_russian_doll_envelopes | ⬜ |
 | 355 | Design Twitter | Medium | Arrays | leetcode/medium/arrays/_355_design_twitter | ⬜ |
 | 356 | Line Reflection | Medium | Arrays | leetcode/medium/arrays/_356_line_reflection | ⬜ |
-| 357 | Count Numbers With Unique Digits | Medium | Sql | leetcode/medium/sql/_357_count_numbers_with_unique_digits | ⬜ |
+| 357 | Count Numbers With Unique Digits | Medium | Dynamic Programming | leetcode/medium/sql/_357_count_numbers_with_unique_digits | ⬜ |
 | 358 | Rearrange String K Distance Apart | Hard | Strings | leetcode/hard/strings/_358_rearrange_string_k_distance_apart | ⬜ |
 | 359 | Logger Rate Limiter | Easy | Arrays | leetcode/easy/arrays/_359_logger_rate_limiter | ⬜ |
 | 360 | Sort Transformed Array | Medium | Arrays | leetcode/medium/arrays/_360_sort_transformed_array | ⬜ |
@@ -406,7 +406,7 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | 392 | Is Subsequence | Easy | Arrays | leetcode/easy/arrays/_392_is_subsequence | ⬜ |
 | 393 | Utf 8 Validation | Medium | Arrays | leetcode/medium/arrays/_393_utf_8_validation | ⬜ |
 | 394 | Decode String | Medium | Stack | leetcode/medium/stack/_394_decode_string | ⬜ |
-| 395 | Longest Substring With At Least K Repeating Characters | Medium | Binary Search Tree | leetcode/medium/binary_search_tree/_395_longest_substring_with_at_least_k_repeating_characters | ⬜ |
+| 395 | Longest Substring With At Least K Repeating Characters | Medium | Sliding Window | leetcode/medium/binary_search_tree/_395_longest_substring_with_at_least_k_repeating_characters | ⬜ |
 | 396 | Rotate Function | Medium | Arrays | leetcode/medium/arrays/_396_rotate_function | ⬜ |
 | 397 | Integer Replacement | Medium | Arrays | leetcode/medium/arrays/_397_integer_replacement | ⬜ |
 | 398 | Random Pick Index | Medium | Arrays | leetcode/medium/arrays/_398_random_pick_index | ⬜ |
