@@ -12,3 +12,4 @@ target/
 /out/
 /target/
 /.idea/
+*.txt
