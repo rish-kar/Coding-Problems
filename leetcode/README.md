@@ -3,15 +3,15 @@
 This index shows every LeetCode problem folder currently stored in the repository and points to its exact location.
 
 ## Snapshot
-- Total LeetCode problem folders: **368**
+- Total LeetCode problem folders: **370**
 - Solved problems: **34**
-- Unsolved problems: **334**
+- Unsolved problems: **336**
 
 ## Difficulty breakdown
 
 | Difficulty | Count |
 | --- | ---: |
-| Easy | 95 |
+| Easy | 97 |
 | Medium | 215 |
 | Hard | 58 |
 
@@ -28,7 +28,7 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | Sql | 17 |
 | Binary Search Tree | 16 |
 | Backtracking | 14 |
-| Two Pointers | 14 |
+| Two Pointers | 16 |
 | Matrix | 12 |
 | Binary Search | 11 |
 | Graph | 10 |
@@ -412,6 +412,8 @@ This index shows every LeetCode problem folder currently stored in the repositor
 | 398 | Random Pick Index | Medium | Arrays | leetcode/medium/arrays/_398_random_pick_index | ⬜ |
 | 399 | Evaluate Division | Medium | Arrays | leetcode/medium/arrays/_399_evaluate_division | ⬜ |
 | 400 | Nth Digit | Medium | Arrays | leetcode/medium/arrays/_400_nth_digit | ⬜ |
+| 905 | Sort Array By Parity | Easy | Two Pointers | leetcode/easy/two_pointers/_905_sort_array_by_parity | ✅ |
+| 922 | Sort Array By Parity II | Easy | Two Pointers | leetcode/easy/two_pointers/_922_sort_array_by_parity_ii | ✅ |
 | 724 | Find Pivot Index | Easy | Arrays | leetcode/easy/arrays/_724_find_pivot_index | ⬜ |
 | 1480 | Running Sum Of 1d Array | Easy | Arrays | leetcode/easy/arrays/_1480_running_sum_of_1d_array | ⬜ |
 | 1920 | Build Array From Permutation | Easy | Arrays | leetcode/easy/arrays/_1920_build_array_from_permutation | ⬜ |
