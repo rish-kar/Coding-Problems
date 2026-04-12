@@ -23,7 +23,7 @@ A long-term coding practice repository for keeping each problem in a self-contai
 | geeksforgeeks | 0 | 0 | ⬜ | `geeksforgeeks/` |
 | hackerrank | 0 | 0 | ⬜ | `hackerrank/` |
 | interviewbit | 0 | 0 | ⬜ | `interviewbit/` |
-| leetcode | 370 | 28 | ✅ | `leetcode/` |
+| leetcode | 370 | 37 | ✅ | `leetcode/` |
 | spoj | 0 | 0 | ⬜ | `spoj/` |
 
 ## Active structure in this repository

@@ -1,4 +1,4 @@
-﻿package easy.arrays._283_move_zeroes;
+package easy.arrays._283_move_zeroes;
 
 public class MoveZeroes {
     public void moveZeroes(int[] nums) {

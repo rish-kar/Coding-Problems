@@ -4,8 +4,8 @@ This index shows every LeetCode problem folder currently stored in the repositor
 
 ## Snapshot
 - Total LeetCode problem folders: **370**
-- Solved problems: **34**
-- Unsolved problems: **336**
+- Solved problems: **37**
+- Unsolved problems: **333**
 
 ## Difficulty breakdown
 
