@@ -31,10 +31,10 @@ Every platform currently uses the same top-level difficulty buckets that already
 
 ```text
 platform/
-â”œâ”€ easy/
-â”œâ”€ medium/
-â”œâ”€ hard/
-â””â”€ advanced/
+├─ easy/
+├─ medium/
+├─ hard/
+└─ advanced/
 ```
 
 Inside each difficulty folder, reusable topic folders are used to keep problems discoverable and consistent.
