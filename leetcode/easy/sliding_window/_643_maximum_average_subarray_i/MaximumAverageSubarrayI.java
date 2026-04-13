@@ -1,7 +1,6 @@
-package easy.arrays;
+package easy.sliding_window._643_maximum_average_subarray_i;
 
-// 643. Maximum Average Subarray I
-public class NewMaximumAverageSubarrayI {
+public class MaximumAverageSubarrayI {
     public double findMaxAverage(int[] nums, int k) {
 
         // Case 1: If array passed is null or size is 0 (bypassing constraints) -> Return 0
@@ -17,16 +16,17 @@ public class NewMaximumAverageSubarrayI {
         double windowValue = 0;
         double answer = 0;
 
-        for (int i=0; i<k; i++) {
+        for (int i = 0; i < k; i++) {
             windowValue += nums[i];
         }
         answer = windowValue;
 
-        for (int i=k; i<nums.length; i++) {
-            windowValue = windowValue - nums[i-k] + nums[i];
+        for (int i = k; i < nums.length; i++) {
+            windowValue = windowValue - nums[i - k] + nums[i];
 
             answer = Math.max(answer, windowValue);
         }
-        return answer/k;
+        return answer / k;
     }
 }
+
