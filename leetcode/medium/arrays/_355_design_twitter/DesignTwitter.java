@@ -1,5 +1,7 @@
 package medium.arrays._355_design_twitter;
 
+import java.util.List;
+
 public class DesignTwitter {
 
     public DesignTwitter() {

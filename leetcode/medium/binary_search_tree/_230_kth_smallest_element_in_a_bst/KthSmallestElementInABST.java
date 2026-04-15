@@ -1,5 +1,7 @@
 package medium.binary_search_tree._230_kth_smallest_element_in_a_bst;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

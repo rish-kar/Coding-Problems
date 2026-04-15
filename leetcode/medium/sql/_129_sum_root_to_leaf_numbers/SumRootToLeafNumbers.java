@@ -1,5 +1,7 @@
 package medium.sql._129_sum_root_to_leaf_numbers;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

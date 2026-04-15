@@ -1,4 +1,4 @@
-﻿package easy.arrays._374_guess_number_higher_or_lower;
+package easy.arrays._374_guess_number_higher_or_lower;
 
 public class GuessNumberHigherOrLowerTest {
 

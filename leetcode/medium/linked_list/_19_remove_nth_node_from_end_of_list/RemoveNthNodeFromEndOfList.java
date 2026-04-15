@@ -1,5 +1,7 @@
 package medium.linked_list._19_remove_nth_node_from_end_of_list;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

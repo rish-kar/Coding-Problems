@@ -1,5 +1,7 @@
 package medium.linked_list._143_reorder_list;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

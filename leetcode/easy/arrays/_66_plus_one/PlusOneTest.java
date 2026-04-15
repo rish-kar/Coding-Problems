@@ -1,4 +1,4 @@
-﻿package easy.arrays._66_plus_one;
+package easy.arrays._66_plus_one;
 
 import java.util.Arrays;
 

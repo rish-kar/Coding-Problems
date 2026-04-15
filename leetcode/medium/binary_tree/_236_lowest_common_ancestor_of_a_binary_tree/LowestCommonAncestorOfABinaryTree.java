@@ -1,5 +1,7 @@
 package medium.binary_tree._236_lowest_common_ancestor_of_a_binary_tree;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

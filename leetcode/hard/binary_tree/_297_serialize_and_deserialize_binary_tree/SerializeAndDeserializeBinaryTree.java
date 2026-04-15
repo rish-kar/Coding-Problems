@@ -1,5 +1,7 @@
 package hard.binary_tree._297_serialize_and_deserialize_binary_tree;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

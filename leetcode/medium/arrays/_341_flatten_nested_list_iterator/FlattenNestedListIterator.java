@@ -1,5 +1,8 @@
 package medium.arrays._341_flatten_nested_list_iterator;
 
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
@@ -33,6 +36,17 @@ public class FlattenNestedListIterator implements Iterator<Integer> {
     public boolean hasNext() {
         // TODO: Implement solution.
         return false;
+    }
+
+    /**
+     * LeetCode provides this interface at runtime; this local stub is here so the project compiles.
+     */
+    public interface NestedInteger {
+        boolean isInteger();
+
+        Integer getInteger();
+
+        List<NestedInteger> getList();
     }
 }
 

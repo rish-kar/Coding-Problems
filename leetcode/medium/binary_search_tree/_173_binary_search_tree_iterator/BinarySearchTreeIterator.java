@@ -1,5 +1,7 @@
 package medium.binary_search_tree._173_binary_search_tree_iterator;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

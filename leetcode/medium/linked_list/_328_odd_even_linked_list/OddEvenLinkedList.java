@@ -1,5 +1,7 @@
 package medium.linked_list._328_odd_even_linked_list;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
