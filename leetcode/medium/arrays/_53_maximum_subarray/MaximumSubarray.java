@@ -2,7 +2,18 @@ package medium.arrays._53_maximum_subarray;
 
 public class MaximumSubarray {
     public int maxSubArray(int[] nums) {
-        // TODO: Implement solution.
-        return 0;
+        int current = nums[0];
+
+        int best = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+
+            current = Math.max(nums[i], nums[i] + current);
+
+            best = Math.max(best, current);
+
+        }
+
+        return best;
     }
 }
