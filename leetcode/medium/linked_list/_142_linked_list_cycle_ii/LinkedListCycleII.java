@@ -1,5 +1,7 @@
 package medium.linked_list._142_linked_list_cycle_ii;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * class ListNode {

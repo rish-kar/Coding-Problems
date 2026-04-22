@@ -1,5 +1,7 @@
 package medium.linked_list._92_reverse_linked_list_ii;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

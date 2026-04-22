@@ -1,5 +1,7 @@
 package medium.linked_list._237_delete_node_in_a_linked_list;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

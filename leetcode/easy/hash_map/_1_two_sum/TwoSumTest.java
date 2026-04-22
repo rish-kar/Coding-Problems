@@ -1,4 +1,4 @@
-﻿package easy.hash_map._1_two_sum;
+package easy.hash_map._1_two_sum;
 
 public class TwoSumTest {
 

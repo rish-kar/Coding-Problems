@@ -1,5 +1,7 @@
 package hard.linked_list._25_reverse_nodes_in_k_group;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

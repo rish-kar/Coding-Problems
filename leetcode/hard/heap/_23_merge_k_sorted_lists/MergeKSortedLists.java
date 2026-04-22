@@ -1,5 +1,7 @@
 package hard.heap._23_merge_k_sorted_lists;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

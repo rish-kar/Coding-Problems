@@ -1,7 +1,8 @@
 package easy.binary_tree._144_binary_tree_preorder_traversal;
 
-import java.util.List;
 import leetcode.common.TreeNode;
+
+import java.util.List;
 
 /**
  * Definition for a binary tree node.

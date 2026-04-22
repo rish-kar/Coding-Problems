@@ -1,5 +1,8 @@
 package hard.binary_search._4_median_of_two_sorted_arrays;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class MedianOfTwoSortedArrays {
   public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 

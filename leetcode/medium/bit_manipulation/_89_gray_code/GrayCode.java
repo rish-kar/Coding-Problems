@@ -1,5 +1,7 @@
 package medium.bit_manipulation._89_gray_code;
 
+import java.util.List;
+
 public class GrayCode {
     public List<Integer> grayCode(int n) {
         // TODO: Implement solution.

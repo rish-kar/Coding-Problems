@@ -1,5 +1,7 @@
 package hard.binary_tree._124_binary_tree_maximum_path_sum;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

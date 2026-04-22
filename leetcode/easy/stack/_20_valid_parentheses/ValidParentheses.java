@@ -1,6 +1,6 @@
 package easy.stack._20_valid_parentheses;
 
-import java.util.*;
+import java.util.Stack;
 
 public class ValidParentheses {
   public boolean isValid(String input) {

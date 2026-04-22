@@ -1,5 +1,7 @@
 package medium.linked_list._24_swap_nodes_in_pairs;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

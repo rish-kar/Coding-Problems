@@ -1,5 +1,7 @@
 package medium.arrays._385_mini_parser;
 
+import java.util.List;
+
 /**
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
@@ -29,8 +31,23 @@ package medium.arrays._385_mini_parser;
  * }
  */
 public class MiniParser {
-    public NestedInteger deserialize(String s) {
+    public MiniParser.NestedInteger deserialize(String s) {
         // TODO: Implement solution.
         return null;
+    }
+
+    /**
+     * LeetCode provides this interface at runtime; this local stub is here so the project compiles.
+     */
+    public interface NestedInteger {
+        boolean isInteger();
+
+        Integer getInteger();
+
+        void setInteger(int value);
+
+        void add(NestedInteger ni);
+
+        List<NestedInteger> getList();
     }
 }

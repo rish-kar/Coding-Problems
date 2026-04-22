@@ -1,5 +1,7 @@
 package medium.strings._8_string_to_integer_atoi;
 
+import java.util.ArrayList;
+
 public class StringToIntegerAtoi {
   public int myAtoi(String s) {
 

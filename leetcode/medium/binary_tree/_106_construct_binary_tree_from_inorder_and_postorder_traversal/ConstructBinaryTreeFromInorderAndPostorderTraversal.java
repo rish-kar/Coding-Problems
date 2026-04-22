@@ -1,5 +1,7 @@
 package medium.binary_tree._106_construct_binary_tree_from_inorder_and_postorder_traversal;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

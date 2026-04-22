@@ -1,5 +1,7 @@
 package hard.binary_search_tree._99_recover_binary_search_tree;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

@@ -1,5 +1,7 @@
 package medium.dynamic_programming._120_triangle;
 
+import java.util.List;
+
 public class Triangle {
     public int minimumTotal(List<List<Integer>> triangle) {
         // TODO: Implement solution.

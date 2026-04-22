@@ -26,7 +26,7 @@ package medium.binary_search_tree._109_convert_sorted_list_to_binary_search_tree
  * }
  */
 public class ConvertSortedListToBinarySearchTree {
-    public TreeNode sortedListToBST(ListNode head) {
+    public leetcode.common.TreeNode sortedListToBST(leetcode.common.ListNode head) {
         // TODO: Implement solution.
         return null;
     }

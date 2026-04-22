@@ -1,5 +1,7 @@
 package medium.two_pointers._18_4sum;
 
+import java.util.List;
+
 public class FourSum {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         // TODO: Implement solution.

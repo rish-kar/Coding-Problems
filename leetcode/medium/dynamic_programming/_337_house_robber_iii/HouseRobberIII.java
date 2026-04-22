@@ -1,5 +1,7 @@
 package medium.dynamic_programming._337_house_robber_iii;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

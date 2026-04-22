@@ -1,5 +1,7 @@
 package medium.linked_list._82_remove_duplicates_from_sorted_list_ii;
 
+import leetcode.common.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

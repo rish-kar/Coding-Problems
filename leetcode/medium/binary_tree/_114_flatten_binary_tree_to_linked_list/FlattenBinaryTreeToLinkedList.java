@@ -1,5 +1,7 @@
 package medium.binary_tree._114_flatten_binary_tree_to_linked_list;
 
+import leetcode.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
